@@ -49,7 +49,7 @@ export default function Footer() {
                 <span className="">LinkedIn</span>
               </a>
               <a 
-                href="https://github.com/SQE-SJSU" 
+                href="https://github.com/SQEatSJSU" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center justify-center md:justify-start hover:text-gray-100 transition-colors duration-200"
