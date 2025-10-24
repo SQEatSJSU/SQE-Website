@@ -21,11 +21,11 @@ export const Navigation: React.FC = () => {
 	}, []);
 
 	const navLinks = [
-		{ href: "/about", label: "About" },
-		{ href: "/projects", label: "Our Lab" },
-		{ href: "/papers", label: "Papers" },
-		{ href: "/members", label: "Team" },
-		{ href: "/apply", label: "Join" },
+		{ href: "/about", label: "About", external: false },
+		{ href: "/projects", label: "Our Lab", external: false },
+		{ href: "/papers", label: "Papers", external: false },
+		{ href: "/members", label: "Team", external: false },
+		{ href: "/apply", label: "Join", external: false },
 	];
 
 	return (

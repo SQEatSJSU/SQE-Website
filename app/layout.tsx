@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 		siteName: "sqe-sjsu.com",
 		images: [
 			{
-				url: "/newlogowb.png",
+				url: "/favicon.png",
 				width: 1920,
 				height: 1080,
 			},
