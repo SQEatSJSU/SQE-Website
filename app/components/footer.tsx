@@ -33,7 +33,7 @@ export default function Footer() {
             <h2 className="text-lg font-bold mb-4">Connect</h2>
             <nav className="flex flex-col gap-2">
               <a 
-                href="https://instagram.com/sqe_sjsu" 
+                href="https://www.instagram.com/sqeatsjsu/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center justify-center md:justify-start hover:text-gray-100 transition-colors duration-200"
