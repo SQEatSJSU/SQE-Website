@@ -84,15 +84,10 @@ export const MEMBERS: Member[] = [
     img: "/members/andre.png",
     linkedin: "https://www.linkedin.com/in/andre-li-8a4003155/",
   },
-  {
-    name: "Francisco Correia",
-    role: "Member",
-    img: "/members/francisco.jpeg",
-    linkedin: "",
-  },
 ];
 
 // Get the count of active members
 export const getMemberCount = (): number => {
   return MEMBERS.length;
 };
+

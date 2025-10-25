@@ -53,11 +53,6 @@ const TEAM_MEMBERS = [
     linkedin: "https://www.linkedin.com/in/alondra-torres-123456789/"
   },
   {
-    name: "Francisco Correia",
-    photo: "/members/francisco.jpeg", // You'll need to add this photo
-    linkedin: "https://www.linkedin.com/in/francisco-correia-123456789/"
-  },
-  {
     name: "Stephen Reagin",
     photo: "/members/stephen.jpeg",
     linkedin: "https://www.linkedin.com/in/stephen-reagin-123456789/"
@@ -142,3 +137,4 @@ export default function MembersPage() {
     </div>
   );
 }
+
