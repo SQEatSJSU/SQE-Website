@@ -84,6 +84,12 @@ export const MEMBERS: Member[] = [
     img: "/members/andre.png",
     linkedin: "https://www.linkedin.com/in/andre-li-8a4003155/",
   },
+  {
+    name: "Mariana Rojas-Montoya",
+    role: "Member",
+    img: "/members/mariana.jpg",
+    linkedin: "",
+  },
 ];
 
 // Get the count of active members

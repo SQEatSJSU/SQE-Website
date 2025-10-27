@@ -61,6 +61,11 @@ const TEAM_MEMBERS = [
     name: "Imran",
     photo: "/members/imran.jpg",
     linkedin: "https://www.linkedin.com/in/imran-123456789/"
+  },
+  {
+    name: "Mariana Rojas-Montoya",
+    photo: "/members/mariana.jpg",
+    linkedin: ""
   }
 ];
 
