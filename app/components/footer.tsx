@@ -22,7 +22,7 @@ export default function Footer() {
           <div>
             <h2 className="text-lg font-bold mb-4">Contact</h2>
             <a 
-              href="mailto:team@sqe-sjsu.com" 
+              href="mailto:sjsu.quantum@gmail.com" 
               className="flex items-center hover:text-gray-100 transition-colors duration-200"
             >
               <span>Email</span>
