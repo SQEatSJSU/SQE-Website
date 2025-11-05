@@ -13,22 +13,33 @@ export default function JoinUsPage() {
     <div className="relative min-h-screen flex flex-col bg-[#181818] text-white overflow-hidden">
       <Head>
         <title>Join ASA | Aggie Sports Analytics</title>
+        <style>{`
+          @media (min-width: 640px) {
+            .image-container-wrapper {
+              border-radius: 0.5rem;
+            }
+            .image-container-wrapper > * {
+              border-radius: inherit;
+            }
+          }
+        `}</style>
       </Head>
       <Header />
       
       <main className="relative flex-grow flex flex-col">
-        <div className="relative w-full h-64 rounded-lg overflow-hidden">
+        <div className="relative w-full h-64 overflow-hidden image-container-wrapper">
+          <div className="absolute inset-0 overflow-hidden">
+            <Image
+              src="/community/blochlogo.png"
+              alt="SQE Bloch Logo"
+              fill
+              priority
+              className="object-contain"
+            />
+          </div>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#181818] z-10"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#181818]/30 via-transparent to-[#181818]/30 z-10"></div>
           <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#181818] to-transparent z-20"></div>
-          
-          <Image
-            src="/community/blochlogo.png"
-            alt="SQE Bloch Logo"
-            fill
-            priority
-            className="object-contain"
-          />
         </div>
 
         <div className="w-full flex items-center justify-center px-6 md:px-12 py-8">
@@ -39,7 +50,7 @@ export default function JoinUsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              Become a Member SQE
+              Become a Member of SQE
             </motion.h1>
             
             <motion.p 

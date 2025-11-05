@@ -40,25 +40,25 @@ export default function Footer() {
                 href="https://www.instagram.com/sqeatsjsu/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="flex items-center justify-center md:justify-start hover:text-gray-100 transition-colors duration-200"
+                className="hover:text-gray-100 transition-colors duration-200"
               >
-                <span className="">Instagram</span>
+                Instagram
               </a>
               <a 
                 href="https://www.linkedin.com/company/sqe-sjsu/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="flex items-center justify-center md:justify-start hover:text-gray-100 transition-colors duration-200"
+                className="hover:text-gray-100 transition-colors duration-200"
               >
-                <span className="">LinkedIn</span>
+                LinkedIn
               </a>
               <a 
                 href="https://github.com/SQEatSJSU" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="flex items-center justify-center md:justify-start hover:text-gray-100 transition-colors duration-200"
+                className="hover:text-gray-100 transition-colors duration-200"
               >
-                <span className="">GitHub</span>
+                GitHub
               </a>
             </nav>
           </div>
