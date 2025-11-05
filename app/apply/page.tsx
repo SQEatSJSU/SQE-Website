@@ -16,8 +16,8 @@ export default function JoinUsPage() {
       </Head>
       <Header />
       
-      <main className="relative flex-grow flex flex-col md:flex-row">
-        <div className="relative w-full md:w-1/2 h-64 md:h-auto md:min-h-screen">
+      <main className="relative flex-grow flex flex-col">
+        <div className="relative w-full h-64 rounded-lg overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#181818] z-10"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#181818]/30 via-transparent to-[#181818]/30 z-10"></div>
           <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#181818] to-transparent z-20"></div>
@@ -27,12 +27,12 @@ export default function JoinUsPage() {
             alt="SQE Bloch Logo"
             fill
             priority
-            className="object-contain md:object-cover"
+            className="object-contain"
           />
         </div>
 
-        <div className="w-full md:w-1/2 flex items-center justify-center px-6 md:px-12 py-8 md:py-0">
-          <div className="max-w-lg">
+        <div className="w-full flex items-center justify-center px-6 md:px-12 py-8">
+          <div className="max-w-lg text-center">
             <motion.h1 
               className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight"
               initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export default function JoinUsPage() {
             </motion.p>
             
             <motion.div
-              className="mt-8"
+              className="mt-8 flex justify-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
