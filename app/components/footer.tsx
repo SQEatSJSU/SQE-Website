@@ -3,8 +3,12 @@
 import Link from "next/link";
 import { Mail, Instagram, Linkedin, Github } from "lucide-react";
 import React from "react";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+  const isApplyPage = pathname === "/apply";
+
   return (
     <footer className="bg-[#181818] text-gray-300">
       <div className="container mx-auto p-6 flex flex-col md:flex-row justify-between items-center">
@@ -75,9 +79,11 @@ export default function Footer() {
                 Papers
               </Link>
 
-              <Link href="/apply" className="transition-colors duration-200 hover:text-gray-100">
-                Join
-              </Link>
+              {!isApplyPage && (
+                <Link href="/apply" className="transition-colors duration-200 hover:text-gray-100">
+                  Join
+                </Link>
+              )}
             </nav>
           </div>
         </div>

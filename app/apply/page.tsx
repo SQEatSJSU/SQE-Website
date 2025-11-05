@@ -16,8 +16,8 @@ export default function JoinUsPage() {
       </Head>
       <Header />
       
-      <main className="relative flex-grow flex">
-        <div className="relative w-1/2 min-h-screen">
+      <main className="relative flex-grow flex flex-col md:flex-row">
+        <div className="relative w-full md:w-1/2 h-64 md:h-auto md:min-h-screen">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#181818] z-10"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#181818]/30 via-transparent to-[#181818]/30 z-10"></div>
           <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#181818] to-transparent z-20"></div>
@@ -27,11 +27,11 @@ export default function JoinUsPage() {
             alt="SQE Bloch Logo"
             fill
             priority
-            className="object-cover"
+            className="object-contain md:object-cover"
           />
         </div>
 
-        <div className="w-1/2 flex items-center justify-center px-12">
+        <div className="w-full md:w-1/2 flex items-center justify-center px-6 md:px-12 py-8 md:py-0">
           <div className="max-w-lg">
             <motion.h1 
               className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight"

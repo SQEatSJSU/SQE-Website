@@ -3,8 +3,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  const pathname = usePathname();
+  const isApplyPage = pathname === "/apply";
+
   return (
     <div className="w-screen bg-[#181818] text-xs">
       <div className="navbar bg-[#181818]">
@@ -44,11 +48,13 @@ export default function Header() {
                     Papers
                   </Link>
                 </li>
-                <li>
-                  <Link className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/apply">
-                    Join
-                  </Link>
-                </li>
+                {!isApplyPage && (
+                  <li>
+                    <Link className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/apply">
+                      Join
+                    </Link>
+                  </li>
+                )}
               </ul>
           </div>
           <Link href="/" className="hover:bg-transparent active:bg-transparent ml-2">
@@ -81,12 +87,14 @@ export default function Header() {
           </div>
         </div>
         <div className="navbar-end">
-          <Link 
-            href="/apply" 
-            className="inline-flex items-center px-5 py-3 mr-2 bg-transparent border border-white text-white text-sm font-medium rounded-full hover:border-zinc-500 hover:text-zinc-300 transition-colors duration-300"
-          >
-            Join
-          </Link>
+          {!isApplyPage && (
+            <Link 
+              href="/apply" 
+              className="inline-flex items-center px-5 py-3 mr-2 bg-transparent border border-white text-white text-sm font-medium rounded-full hover:border-zinc-500 hover:text-zinc-300 transition-colors duration-300"
+            >
+              Join
+            </Link>
+          )}
         </div>
       </div>
     </div>
