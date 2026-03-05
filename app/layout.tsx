@@ -2,7 +2,7 @@ import "../global.css";
 import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
-import { Analytics } from "./components/analytics";
+import { Analytics } from "@vercel/analytics/next";
 
 
 export const metadata: Metadata = {
@@ -86,7 +86,6 @@ export default function RootLayout({
 
 			<head>
 				<link rel="manifest" href="/favicon/site.webmanifest" />
-				<Analytics />
 			</head>
 			<body
 				className={`bg-[#181818] font-calsans ${
@@ -94,8 +93,7 @@ export default function RootLayout({
 				}`}
 			>
 				{children}
-				
-				
+				<Analytics />
 			</body>
 
 				
