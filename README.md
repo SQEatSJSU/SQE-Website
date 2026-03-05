@@ -1,3 +1,3 @@
-## Aggie Sports Analytics Website 🏀
+## SQE Society of Quantum Engineers Website
 
-The official Aggie Sports Analytics website, built in Next.js.
+The official website for the Society of Quantum Engineers at SJSU, built in Next.js.

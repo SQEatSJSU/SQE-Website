@@ -146,3 +146,9 @@ After restoration:
 3. Test responsive behavior on different screen sizes
 4. Ensure no console errors related to missing images
 
+
+
+
+
+
+

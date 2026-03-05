@@ -34,8 +34,18 @@ export default function Header() {
                 className="z-30 menu menu-md dropdown-content mt-3 p-2 shadow bg-zinc-950 rounded-box w-52 text-zinc-300"
               >
                 <li>
+                  <Link className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/">
+                    Home
+                  </Link>
+                </li>
+                <li>
                   <Link className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/about">
                     About
+                  </Link>
+                </li>
+                <li>
+                  <Link className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/community">
+                    Community
                   </Link>
                 </li>
                 <li>
@@ -49,11 +59,11 @@ export default function Header() {
                   </Link>
                 </li>
                 {!isApplyPage && (
-                  <li>
-                    <Link className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/apply">
-                      Join
-                    </Link>
-                  </li>
+                <li>
+                  <Link className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/apply">
+                    Join
+                  </Link>
+                </li>
                 )}
               </ul>
           </div>
@@ -70,6 +80,9 @@ export default function Header() {
         <div className="navbar-center">
           <div className="hidden lg:flex">
               <ul className="menu menu-horizontal px-1 text-zinc-200 text-xl">
+                <li>
+                  <Link href="/" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">Home</Link>
+                </li>
                 <li>
                   <Link href="/about" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">About</Link>
                 </li>
@@ -88,12 +101,12 @@ export default function Header() {
         </div>
         <div className="navbar-end">
           {!isApplyPage && (
-            <Link 
-              href="/apply" 
-              className="inline-flex items-center px-5 py-3 mr-2 bg-transparent border border-white text-white text-sm font-medium rounded-full hover:border-zinc-500 hover:text-zinc-300 transition-colors duration-300"
-            >
-              Join
-            </Link>
+          <Link 
+            href="/apply" 
+            className="inline-flex items-center px-5 py-3 mr-2 bg-transparent border border-white text-white text-sm font-medium rounded-full hover:border-zinc-500 hover:text-zinc-300 transition-colors duration-300"
+          >
+            Join
+          </Link>
           )}
         </div>
       </div>

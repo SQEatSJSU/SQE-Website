@@ -12,7 +12,7 @@ export default function JoinUsPage() {
   return (
     <div className="relative min-h-screen flex flex-col bg-[#181818] text-white overflow-hidden">
       <Head>
-        <title>Join ASA | Aggie Sports Analytics</title>
+        <title>Join SQE | Society of Quantum Engineers at SJSU</title>
         <style>{`
           @media (min-width: 640px) {
             .image-container-wrapper {

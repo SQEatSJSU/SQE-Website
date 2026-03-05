@@ -12,7 +12,7 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 
 		<Link href={`/projects/${project.slug}`}>
 			<Head>
-				<title>{project.title} | Aggie Sports Analytics at UC Davis</title>
+				<title>{project.title} | SQE Society of Quantum Engineers at SJSU</title>
 			</Head>
 			<article className="p-4 md:p-8">
 

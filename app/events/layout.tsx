@@ -2,12 +2,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: {
-		default: "Events | Aggie Sports Analytics at UC Davis",
-		template: "%s | Aggie Sports Analytics",
+		default: "Events | SQE Society of Quantum Engineers at SJSU",
+		template: "%s | SQE Society of Quantum Engineers at SJSU",
 	},
 	description: "Revolutioning sports success through data science and machine learning at UC Davis.",
 	openGraph: {
-		title: "Aggie Sports Analytics",
+		title: "SQE Society of Quantum Engineers at SJSU",
 		description:
 			"Revolutioning sports success through data science and machine learning.",
 		url: "aggiesportsanalytics.com",

@@ -7,29 +7,24 @@ import { Users, Code, Newspaper, HeartHandshake } from "lucide-react";
 
 import Header from "./components/Header";
 import Footer from "./components/footer";
-import { getMemberCount } from "../data/members";
+import { getMemberCount } from "@/data/members";
 
-// Company logos removed - see README.md for restoration instructions
-// const ALL_LOGOS = [
-//   "/logos/logoamazon.png",
-//   "/logos/logonvidia.png",
-//   "/logos/logometa.png",
-//   "/logos/logogoogle.png",
-//   "/logos/logocap1.png",
-//   "/logos/logoatlassian.png",
-//   "/logos/logoqualcomm.png",
-//   "/logos/logotesla.png",
-//   "/logos/logodeloitte.png",
-//   "/logos/logoey.png",
-//   "/logos/logokpmg.png",
-//   "/logos/logopwc.png",
-//   "/logos/logowf.png",
-//   "/logos/logoNBA.png",
-//   "/logos/logoSF.png",
-// ];
+const ALL_LOGOS = [
+  "/logos/ibm.png",
+  "/logos/psiquantuml.png",
+  "/logos/nvidia.png",
+  "/logos/ionq.png",
+  "/logos/alice_and_bob.png",
+  "/logos/quantinuum.png",
+  "/logos/iqm.png",
+  "/logos/google.png",
+  "/logos/quera.png",
+  "/logos/dwave.png",
+  "/logos/qbraid.png",
+  "/logos/hrl.png",
+];
 
 export default function Home() {
-  const memberCount = getMemberCount();
 
   return (
     <div className="w-screen min-h-screen overflow-hidden bg-[#181818] text-white">
@@ -107,7 +102,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2">{memberCount}+</div>
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2">{getMemberCount()}+</div>
               <div className="text-lg text-zinc-400">Active Members</div>
             </motion.div>
             <motion.div
@@ -199,7 +194,51 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Where We Go section removed - see README.md for restoration instructions */}
+      <section className="bg-[#181818] pt-4 pb-16">
+        <div className="mx-auto max-w-6xl text-left">
+          <motion.h2
+            className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-16"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Where We Go
+          </motion.h2>
+        </div>
+          <div className="mx-auto max-w-6xl">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full">
+              {ALL_LOGOS.slice(0, 12).map((src, i) => {
+                const row = Math.floor(i / 4);
+                const col = i % 4;
+                const delay = (row + col) * 0.1;
+                
+                return (
+                  <motion.div
+                    key={`logo-${i}`}
+                    className="relative h-24 border border-white/10 hover:bg-white/[0.03] transition-colors p-4 flex items-center justify-center group"
+                    initial={{ opacity: 0, y: 20, scale: 0.8 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{ 
+                      duration: 0.4, 
+                      delay: delay,
+                      ease: "easeOut"
+                    }}
+                    viewport={{ once: true, amount: 0.3 }}
+                  >
+                    <Image 
+                      src={src} 
+                      alt="Company logo" 
+                      width={80} 
+                      height={64} 
+                      className="w-full h-full object-contain group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition"
+                    />
+                  </motion.div>
+                );
+              })}
+            </div>
+        </div>
+      </section>
       <br></br>
       <br></br>
 

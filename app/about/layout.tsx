@@ -2,16 +2,16 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: {
-		default: "About | Aggie Sports Analytics",
+		default: "About | SQE Society of Quantum Engineers at SJSU",
 		template: "%s",
 	},
-	description: "Revolutioning sports success through data science and machine learning at UC Davis.",
+	description: "Building the quantum community within SJSU, connecting faculty and students.",
 	openGraph: {
-		title: "Aggie Sports Analytics",
+		title: "SQE Society of Quantum Engineers at SJSU",
 		description:
 			"Revolutioning sports success through data science and machine learning.",
-		url: "aggiesportsanalytics.com",
-		siteName: "aggiesportsanalytics.com",
+		url: "https://sqeatsjsu.org",
+		siteName: "https://sqeatsjsu.org",
 		images: [
 			{
 				url: "/whiteLogo.jpg",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "AggieSportsAnalytics",
+		title: "SQE_SJSU",
 		card: "summary_large_image",
 	},
 	icons: {

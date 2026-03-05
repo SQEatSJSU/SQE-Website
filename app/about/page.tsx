@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../components/footer";
 import Head from "next/head";
 import { motion } from "framer-motion";
@@ -8,11 +8,9 @@ import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import { Laptop, Briefcase, Camera, Linkedin } from "lucide-react";
 import Header from "../components/Header";
-import { MEMBERS, type Member } from "../../data/members";
+import { membersBySemester, ALL_SEMESTERS, CURRENT_SEMESTER, type Member } from "../../data/members";
 
-// Using shared members data from data/members.ts
-
-function LeadershipGrid() {
+function LeadershipGrid({ members }: { members: Member[] }) {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -29,7 +27,7 @@ function LeadershipGrid() {
         visible: { transition: { staggerChildren: 0.15 } },
       }}
     >
-      {MEMBERS.map((leader, index) => (
+      {members.map((leader, index) => (
         <motion.div
           key={leader.name}
           className="w-48 mb-6 bg-transparent border-gray-700 text-slate-200"
@@ -78,6 +76,9 @@ function LeadershipGrid() {
 }
 
 export default function AboutPage() {
+  const [selectedSemester, setSelectedSemester] = useState(CURRENT_SEMESTER);
+  const members = membersBySemester[selectedSemester] ?? [];
+
   return (
     <div className="relative bg-[#181818]">
       <Head>
@@ -88,8 +89,8 @@ export default function AboutPage() {
 
       <section className="relative w-screen h-[70vh]">
         <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#181818] to-transparent z-20"></div>
-        <Image src="/community/group.png" alt="SQE Team" fill priority className="object-cover" />
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+        <Image src="/community/2025-2026-cycle/unboxing.png" alt="SQE Team" fill priority className="object-cover" />
+        <div className="absolute inset-0 bg-black/40 flex items-start justify-center pt-16 sm:pt-20">
           <div className="text-center text-white px-6">
             <motion.h1
               className="font-display tracking-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6"
@@ -169,11 +170,29 @@ export default function AboutPage() {
           </section>
 
           <div className="max-w-7xl mx-auto">
-            <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-12">
-              Members
-            </h1>
+            <div className="flex items-center justify-between mb-12">
+              <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+                Members
+              </h1>
 
-            <LeadershipGrid />
+              <div className="flex gap-2 flex-wrap justify-end">
+                {ALL_SEMESTERS.map((semester) => (
+                  <button
+                    key={semester}
+                    onClick={() => setSelectedSemester(semester)}
+                    className={`px-4 py-1.5 rounded-full text-sm font-medium border transition-colors ${
+                      selectedSemester === semester
+                        ? "bg-white text-black border-white"
+                        : "bg-transparent text-zinc-400 border-white/20 hover:border-white/50 hover:text-white"
+                    }`}
+                  >
+                    {semester}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <LeadershipGrid members={members} />
           </div>
         </div>
 

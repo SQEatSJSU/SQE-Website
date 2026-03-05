@@ -45,7 +45,7 @@ export default function Footer() {
                 Instagram
               </a>
               <a 
-                href="https://www.linkedin.com/company/sqe-sjsu/" 
+                href="https://www.linkedin.com/company/sjsu-society-of-quantum-engineers/about/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="hover:text-gray-100 transition-colors duration-200"
@@ -66,6 +66,9 @@ export default function Footer() {
           <div>
             <h2 className="text-lg font-bold mb-4">Navigate</h2>
             <nav className="flex flex-col gap-2">
+              <Link href="/" className="transition-colors duration-200 hover:text-gray-100">
+                Home
+              </Link>
               <Link href="/about" className="transition-colors duration-200 hover:text-gray-100">
                 About
               </Link>
@@ -80,9 +83,9 @@ export default function Footer() {
               </Link>
 
               {!isApplyPage && (
-                <Link href="/apply" className="transition-colors duration-200 hover:text-gray-100">
-                  Join
-                </Link>
+              <Link href="/apply" className="transition-colors duration-200 hover:text-gray-100">
+                Join
+              </Link>
               )}
             </nav>
           </div>
