@@ -61,6 +61,12 @@ export const membersBySemester: Record<string, Member[]> = {
       linkedin: "",
     },
     {
+      name: "Nicholas Parrilla",
+      role: "Wormhole enthusiast",
+      img: "/members/2025 Fall/nic.png",
+      linkedin: "https://www.linkedin.com/in/nicholas-parrilla/",
+    },
+    {
       name: "Stephen Reagin",
       role: "Member",
       img: "/members/2026 Spring/stephenreagin.JPG",
