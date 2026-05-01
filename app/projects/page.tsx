@@ -58,7 +58,7 @@ export default async function WorkPage() {
                 <div className="text-center">
                   <div className="relative w-full h-96 rounded-lg overflow-hidden border border-zinc-700">
                     <img
-                      src="/community/lab.jpeg"
+                      src="/community/lab.jpeg?v=2026-05-01"
                       alt="SQE Quantum Lab"
                       className="w-full h-full object-cover"
                     />

@@ -25,7 +25,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="inline-flex w-fit items-center rounded-full border border-[#FFC72C]/80 bg-[#0055A2] px-5 py-2 text-xs font-semibold uppercase tracking-wide text-white transition hover:bg-[#0A65BD]"
           >
-            APPLY NOW
+            APPLY FOR LEADERSHIP
           </Link>
         </div>
       </div>
