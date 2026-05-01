@@ -74,7 +74,7 @@ export default function JoinUsPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-600 text-zinc-300 text-sm font-medium rounded-full hover:border-zinc-500 hover:text-white transition-colors"
               >
-                Join Now
+                Join Discord
               </a>
             </motion.div>
           </div>

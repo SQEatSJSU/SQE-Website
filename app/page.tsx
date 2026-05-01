@@ -122,7 +122,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2">3+</div>
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2">4+</div>
               <div className="text-lg text-zinc-400">Faculty Collaborations</div>
             </motion.div>
           </div>

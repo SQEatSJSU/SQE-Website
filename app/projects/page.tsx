@@ -58,14 +58,11 @@ export default async function WorkPage() {
                 <div className="text-center">
                   <div className="relative w-full h-96 rounded-lg overflow-hidden border border-zinc-700">
                     <img
-                      src="/research/research1.png"
-                      alt="SQE quantum cryptography research poster"
+                      src="/community/lab.jpeg"
+                      alt="SQE Quantum Lab"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <p className="mt-3 text-sm text-zinc-500">
-                    SQE Quantum Cryptography Analogy Demonstration Kit (BB84) research showcase.
-                  </p>
                 </div>
               </div>
             </div>
