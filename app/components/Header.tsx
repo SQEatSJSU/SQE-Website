@@ -23,9 +23,9 @@ export default function Header() {
             href={leadershipApplyLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex w-fit items-center rounded-full border border-[#FFC72C]/80 bg-[#0055A2] px-5 py-2 text-xs font-semibold uppercase tracking-wide text-white transition hover:bg-[#0A65BD]"
+            className="inline-flex w-fit items-center text-xs font-semibold uppercase tracking-wide text-[#FFC72C] underline underline-offset-4 transition hover:text-white"
           >
-            APPLY FOR LEADERSHIP
+            APPLY FOR LEADERSHIP HERE
           </Link>
         </div>
       </div>
