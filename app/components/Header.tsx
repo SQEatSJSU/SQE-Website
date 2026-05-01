@@ -3,14 +3,32 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 export default function Header() {
-  const pathname = usePathname();
-  const isApplyPage = pathname === "/apply";
+  const leadershipApplyLink = "https://forms.gle/DZDjNmyx7gzBx6xa9";
 
   return (
     <div className="w-screen bg-[#181818] text-xs">
+      <div className="border-b border-[#0055A2]/70 bg-gradient-to-r from-[#002B5C]/45 via-[#003B7A]/35 to-[#002B5C]/45">
+        <div className="mx-auto flex w-full max-w-7xl flex-col gap-2 px-4 py-3 text-zinc-100 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col">
+            <p className="text-sm font-semibold tracking-wide text-[#FFC72C]">
+              Leadership Applications Open Now
+            </p>
+            <p className="text-xs text-zinc-100/90">
+              Apply with your SJSU email. Applications open until Friday May 15th 11:59 PM PST.
+            </p>
+          </div>
+          <Link
+            href={leadershipApplyLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex w-fit items-center rounded-full border border-[#FFC72C]/80 bg-[#0055A2] px-5 py-2 text-xs font-semibold uppercase tracking-wide text-white transition hover:bg-[#0A65BD]"
+          >
+            APPLY NOW
+          </Link>
+        </div>
+      </div>
       <div className="navbar bg-[#181818]">
         <div className="navbar navbar-start">
           <div className="dropdown">
@@ -55,16 +73,17 @@ export default function Header() {
                 </li>
                 <li>
                   <Link className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/papers">
-                    Papers
+                    Research
                   </Link>
                 </li>
-                {!isApplyPage && (
                 <li>
-                  <Link className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/apply">
+                  <Link
+                    className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent"
+                    href="/apply"
+                  >
                     Join
                   </Link>
                 </li>
-                )}
               </ul>
           </div>
           <Link href="/" className="hover:bg-transparent active:bg-transparent ml-2">
@@ -93,21 +112,19 @@ export default function Header() {
                   <Link href="/projects" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">Our Lab</Link>
                 </li>
                 <li>
-                  <Link href="/papers" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">Papers</Link>
+                  <Link href="/papers" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">Research</Link>
                 </li>
 
               </ul>
           </div>
         </div>
         <div className="navbar-end">
-          {!isApplyPage && (
           <Link 
             href="/apply" 
             className="inline-flex items-center px-5 py-3 mr-2 bg-transparent border border-white text-white text-sm font-medium rounded-full hover:border-zinc-500 hover:text-zinc-300 transition-colors duration-300"
           >
             Join
           </Link>
-          )}
         </div>
       </div>
     </div>

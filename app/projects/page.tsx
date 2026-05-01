@@ -53,7 +53,21 @@ export default async function WorkPage() {
           <div className="px-6 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-8 lg:pt-12">
             <div className="text-left mb-12">
               <h1 className="text-4xl font-bold text-white mb-2">Our Lab</h1>
-              <p className="text-zinc-400 text-lg">Our quantum optics lab and research facilities at SJSU.</p>
+              <p className="text-zinc-400 text-lg">Our clubroom is located in Duncan Hall, home to our quantum lab.</p>
+              <div className="mt-8">
+                <div className="text-center">
+                  <div className="relative w-full h-96 rounded-lg overflow-hidden border border-zinc-700">
+                    <img
+                      src="/research/research1.png"
+                      alt="SQE quantum cryptography research poster"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <p className="mt-3 text-sm text-zinc-500">
+                    SQE Quantum Cryptography Analogy Demonstration Kit (BB84) research showcase.
+                  </p>
+                </div>
+              </div>
             </div>
             <div>
               <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2">
@@ -61,17 +75,17 @@ export default async function WorkPage() {
                   <article className="relative w-full h-full p-4 md:p-8">
                     <div className="flex items-center justify-between gap-2">
                       <div className="text-xs text-zinc-100">
-                        <span>QUANTUM OPTICS LAB</span>
+                        <span>LAB STATUS</span>
                       </div>
                     </div>
                     <h2
                       id="featured-lab"
                       className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
                     >
-                      Quantum Optics Laboratory
+                      Building Our Quantum Lab
                     </h2>
                     <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                      Our state-of-the-art quantum optics lab features advanced equipment for quantum computing research, including quantum interferometers, single-photon detectors, and quantum state preparation systems.
+                      We are actively growing SQE's lab capabilities and expanding student-led quantum projects. Our current focus is securing funding, scaling our equipment, and creating more hands-on opportunities for members.
                     </p>
                   </article>
                 </Card>
@@ -81,14 +95,14 @@ export default async function WorkPage() {
                     <article className="relative w-full h-full p-4 md:p-8">
                       <div className="flex items-center justify-between gap-2">
                         <div className="text-xs text-zinc-100">
-                          <span>RESEARCH FACILITIES</span>
+                          <span>CURRENT EQUIPMENT</span>
                         </div>
                       </div>
                       <h2 className="mt-4 text-2xl font-bold text-zinc-100 group-hover:text-white sm:text-3xl font-display">
-                        Quantum Computing Lab
+                        Thorlabs Quantum Key Distribution Setup
                       </h2>
                       <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                        Dedicated space for quantum algorithm development and quantum circuit design with access to quantum simulators and quantum hardware.
+                        SQE currently operates a Thorlabs-based quantum cryptography demonstration kit used to explore BB84 quantum key distribution concepts, including polarization-based encoding and eavesdropping detection.
                       </p>
                     </article>
                   </Card>
@@ -96,28 +110,17 @@ export default async function WorkPage() {
                     <article className="relative w-full h-full p-4 md:p-8">
                       <div className="flex items-center justify-between gap-2">
                         <div className="text-xs text-zinc-100">
-                          <span>COLLABORATION SPACE</span>
+                          <span>PROJECT GROWTH</span>
                         </div>
                       </div>
                       <h2 className="mt-4 text-2xl font-bold text-zinc-100 group-hover:text-white sm:text-3xl font-display">
-                        Student Research Area
+                        Research Expansion in Progress
                       </h2>
                       <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                        Collaborative workspace where students work on quantum engineering projects and research with faculty mentors.
+                        We are developing new project tracks in quantum communication, quantum software workflows, and educational demonstrations while expanding mentorship and hardware access for student teams.
                       </p>
                     </article>
                   </Card>
-                </div>
-              </div>
-              <div className="mt-10">
-                <div className="text-center">
-                  <div className="relative w-full h-96 rounded-lg overflow-hidden border border-zinc-700">
-                    <img
-                      src="/community/lab.jpeg"
-                      alt="SQE Quantum Lab"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
                 </div>
               </div>
             </div>

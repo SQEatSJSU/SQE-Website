@@ -79,7 +79,7 @@ export default function Footer() {
                 Our Lab
               </Link>
               <Link href="/papers" className="transition-colors duration-200 hover:text-gray-100">
-                Papers
+                Research
               </Link>
 
               {!isApplyPage && (

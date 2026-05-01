@@ -17,6 +17,7 @@ type Props = {
 export const Header: React.FC<Props> = ({ project, views }) => {
 	const ref = useRef<HTMLElement>(null);
 	const [isIntersecting, setIntersecting] = useState(true);
+	const leadershipApplyLink = "https://forms.gle/DZDjNmyx7gzBx6xa9";
 
 	const links: { label: string; href: string }[] = [];
 	if (project.repository) {
@@ -43,15 +44,35 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 			        className="relative isolate overflow-hidden bg-[#181818]"
 		>
 			<HeadSEO title="some title or a variable here will work"/>
+			<div className="relative z-50 border-b border-[#0055A2]/70 bg-gradient-to-r from-[#002B5C]/45 via-[#003B7A]/35 to-[#002B5C]/45">
+				<div className="mx-auto flex w-full max-w-7xl flex-col gap-2 px-4 py-3 text-zinc-100 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-6 lg:px-8">
+					<div className="flex flex-col">
+						<p className="text-sm font-semibold tracking-wide text-[#FFC72C]">
+							Leadership Applications Open Now
+						</p>
+						<p className="text-xs text-zinc-100/90">
+							Apply with your SJSU email. Applications open until Friday May 15th 11:59 PM PST.
+						</p>
+					</div>
+					<Link
+						href={leadershipApplyLink}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="inline-flex w-fit items-center rounded-full border border-[#FFC72C]/80 bg-[#0055A2] px-5 py-2 text-xs font-semibold uppercase tracking-wide text-white transition hover:bg-[#0A65BD]"
+					>
+						APPLY NOW
+					</Link>
+				</div>
+			</div>
 			<div
-				className={`fixed inset-x-0 top-0 z-50 backdrop-blur lg:backdrop-blur-none duration-200 border-b lg:bg-transparent ${
+				className={`fixed inset-x-0 top-[88px] z-40 backdrop-blur lg:backdrop-blur-none duration-200 border-b lg:bg-transparent ${
 					isIntersecting
 						? "bg-zinc-900/0 border-transparent"
 						: "bg-white/10  border-zinc-200 lg:border-transparent"
 				}`}
 			>
 				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
-					<div className="flex justify-between gap-8">
+					<div className="flex items-center justify-between gap-4">
 						<span
 							title="View counter for this page"
 							className={`duration-200 hover:font-medium flex items-center gap-1 ${

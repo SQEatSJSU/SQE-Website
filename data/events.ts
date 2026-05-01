@@ -28,6 +28,22 @@ export const eventsByCycle: Record<string, Event[]> = {
   // ── 2025-2026 CYCLE ── most recent at top ──────────────────
   "2025-2026": [
     {
+      id: 8,
+      image: "/community/2025-2026-cycle/martinis.png",
+      title: "SQE Special Guest Meeting",
+      speaker: "Dr. John Martinis (Nobel Laureate) and Alan Ho, CEO of Qolab",
+      date: "April 22, 2026",
+      description: "Dr. John Martinis, Nobel Laureate, and Alan Ho, CEO of Qolab, joined SQE for a special meeting. As leaders in the quantum industry, they inspired students by sharing insights on the future of quantum computing and answering thoughtful student questions.",
+    },
+    {
+      id: 9,
+      image: "/community/2025-2026-cycle/asfunding.png",
+      title: "11th Annual Showcase Presentation",
+      speaker: "Justin Oliver, Alondra Torres Contreras, Vaishnavi Rao, and Abhishek Roy",
+      date: "April 21, 2026",
+      description: "SQE members presented at the 11th Annual Showcase, demonstrating their Quantum Cryptography Thorlabs kit and sharing BB84 protocol research.",
+    },
+    {
       id: 7,
       image: "/community/2025-2026-cycle/unboxing.png",
       title: "General Meeting",

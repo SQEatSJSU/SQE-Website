@@ -173,11 +173,11 @@ export default function Home() {
             <div className="px-8 py-16 h-80 border-r border-white/10 hover:bg-white/[0.03] transition-colors">
               <div className="mb-6">
                 <Newspaper className="w-6 h-6 text-white mb-4" />
-                <h3 className="text-xl font-semibold">Research Papers</h3>
+                <h3 className="text-xl font-semibold">Research</h3>
               </div>
               <p className="text-zinc-300 leading-relaxed">
-              We publish research papers and contribute to the quantum engineering
-              community through academic publications and presentations.
+              We work on quantum engineering research and contribute to the
+              community through collaborative projects and presentations.
               </p>
             </div>
             <div className="px-8 py-16 h-80 hover:bg-white/[0.03] transition-colors">

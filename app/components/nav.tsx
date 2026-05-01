@@ -23,7 +23,7 @@ export const Navigation: React.FC = () => {
 	const navLinks = [
 		{ href: "/about", label: "About", external: false },
 		{ href: "/projects", label: "Our Lab", external: false },
-		{ href: "/papers", label: "Papers", external: false },
+		{ href: "/papers", label: "Research", external: false },
 		{ href: "/members", label: "Team", external: false },
 		{ href: "/apply", label: "Join", external: false },
 	];
