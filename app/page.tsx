@@ -24,6 +24,8 @@ const ALL_LOGOS = [
   "/logos/hrl.png",
 ];
 
+const LEADERSHIP_APPLY_LINK = "https://forms.gle/DZDjNmyx7gzBx6xa9";
+
 export default function Home() {
 
   return (
@@ -52,7 +54,7 @@ export default function Home() {
             We are devoted to building the quantum community within SJSU, connecting faculty and students.
           </motion.p>
           <motion.div
-            className="mt-5"
+            className="mt-5 flex flex-col items-center gap-3"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
@@ -62,6 +64,14 @@ export default function Home() {
               className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-600 text-zinc-400 text-sm font-medium rounded-full hover:border-zinc-500 hover:text-zinc-300 transition-colors duration-300"
             >
               Learn More
+            </a>
+            <a
+              href={LEADERSHIP_APPLY_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-4 py-2 bg-[#FFC72C] text-[#181818] text-sm font-semibold rounded-full hover:bg-[#E6B326] transition-colors duration-300"
+            >
+              APPLY FOR LEADERSHIP HERE
             </a>
           </motion.div>
         </div>

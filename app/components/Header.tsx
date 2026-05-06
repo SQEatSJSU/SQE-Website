@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const leadershipApplyLink = "https://forms.gle/DZDjNmyx7gzBx6xa9";
@@ -23,9 +24,27 @@ export default function Header() {
             href={leadershipApplyLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex w-fit items-center text-xs font-semibold uppercase tracking-wide text-[#FFC72C] underline underline-offset-4 transition hover:text-white"
+            className="inline-flex w-fit items-center"
           >
-            APPLY FOR LEADERSHIP HERE
+            <motion.span
+              className="relative inline-flex text-xs font-semibold uppercase tracking-wide text-[#FFC72C] transition hover:text-white"
+              animate={{ opacity: [1, 0.75, 1] }}
+              transition={{ duration: 1.6, ease: "easeInOut", repeat: Infinity, repeatDelay: 2.2 }}
+            >
+              APPLY FOR LEADERSHIP HERE
+              <motion.span
+                aria-hidden
+                className="absolute left-0 -bottom-1 h-px w-full origin-center bg-current"
+                animate={{ scaleX: [0, 1, 1, 0] }}
+                transition={{
+                  duration: 1.9,
+                  ease: "easeInOut",
+                  times: [0, 0.35, 0.75, 1],
+                  repeat: Infinity,
+                  repeatDelay: 1.9,
+                }}
+              />
+            </motion.span>
           </Link>
         </div>
       </div>
