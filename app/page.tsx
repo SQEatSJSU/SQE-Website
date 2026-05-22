@@ -8,6 +8,7 @@ import { Users, Code, Newspaper, HeartHandshake } from "lucide-react";
 import Header from "./components/Header";
 import Footer from "./components/footer";
 import { getMemberCount } from "@/data/members";
+import { getHomepageHeroCta } from "@/data/siteBanners";
 
 const ALL_LOGOS = [
   "/logos/ibm.png",
@@ -24,9 +25,8 @@ const ALL_LOGOS = [
   "/logos/hrl.png",
 ];
 
-const LEADERSHIP_APPLY_LINK = "https://forms.gle/DZDjNmyx7gzBx6xa9";
-
 export default function Home() {
+  const heroCta = getHomepageHeroCta();
 
   return (
     <div className="w-screen min-h-screen overflow-hidden bg-[#181818] text-white">
@@ -65,14 +65,20 @@ export default function Home() {
             >
               Learn More
             </a>
-            <a
-              href={LEADERSHIP_APPLY_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 bg-[#FFC72C] text-[#181818] text-sm font-semibold rounded-full hover:bg-[#E6B326] transition-colors duration-300"
-            >
-              APPLY FOR LEADERSHIP HERE
-            </a>
+            {heroCta && (
+              <a
+                href={heroCta.ctaHref}
+                {...(heroCta.ctaExternal
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
+                className={
+                  heroCta.homepageCtaClassName ??
+                  "inline-flex items-center px-4 py-2 bg-[#FFC72C] text-[#181818] text-sm font-semibold rounded-full hover:bg-[#E6B326] transition-colors duration-300"
+                }
+              >
+                {heroCta.ctaLabel}
+              </a>
+            )}
           </motion.div>
         </div>
 

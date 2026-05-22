@@ -3,51 +3,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import SiteBannerBar from "./SiteBanner";
 
 export default function Header() {
-  const leadershipApplyLink = "https://forms.gle/DZDjNmyx7gzBx6xa9";
-
   return (
     <div className="w-screen bg-[#181818] text-xs">
-      <div className="border-b border-[#0055A2]/70 bg-gradient-to-r from-[#002B5C]/45 via-[#003B7A]/35 to-[#002B5C]/45">
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-2 px-4 py-3 text-zinc-100 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col">
-            <p className="text-sm font-semibold tracking-wide text-[#FFC72C]">
-              Leadership Applications Open Now
-            </p>
-            <p className="text-xs text-zinc-100/90">
-              Apply with your SJSU email. Applications open until Friday May 15th 11:59 PM PST.
-            </p>
-          </div>
-          <Link
-            href={leadershipApplyLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex w-fit items-center"
-          >
-            <motion.span
-              className="relative inline-flex text-xs font-semibold uppercase tracking-wide text-[#FFC72C] transition hover:text-white"
-              animate={{ opacity: [1, 0.75, 1] }}
-              transition={{ duration: 1.6, ease: "easeInOut", repeat: Infinity, repeatDelay: 2.2 }}
-            >
-              APPLY FOR LEADERSHIP HERE
-              <motion.span
-                aria-hidden
-                className="absolute left-0 -bottom-1 h-px w-full origin-center bg-current"
-                animate={{ scaleX: [0, 1, 1, 0] }}
-                transition={{
-                  duration: 1.9,
-                  ease: "easeInOut",
-                  times: [0, 0.35, 0.75, 1],
-                  repeat: Infinity,
-                  repeatDelay: 1.9,
-                }}
-              />
-            </motion.span>
-          </Link>
-        </div>
-      </div>
+      <SiteBannerBar />
       <div className="navbar bg-[#181818]">
         <div className="navbar navbar-start">
           <div className="dropdown">
@@ -148,4 +109,4 @@ export default function Header() {
       </div>
     </div>
   );
-} 
+}

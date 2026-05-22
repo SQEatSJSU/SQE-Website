@@ -97,7 +97,14 @@ export default function MembersPage() {
                 <h3 className="text-lg font-semibold mb-1 group-hover:text-white transition-colors">
                   {member.name}
                 </h3>
-                <p className="text-sm text-zinc-500 mb-2">{member.role}</p>
+                <p className="text-sm text-zinc-500 mb-2 flex items-center justify-center gap-2 flex-wrap">
+                  <span>{member.role}</span>
+                  {member.msqt && (
+                    <span className="text-xs font-semibold text-white">
+                      MSQT
+                    </span>
+                  )}
+                </p>
                 {member.linkedin && (
                   <a
                     href={member.linkedin}

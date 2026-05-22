@@ -10,6 +10,7 @@
 // HOW TO ADD A MEMBER:
 //   1. Place their photo in public/members/<semester>/
 //   2. Add them to the appropriate semester array
+//   3. Set msqt: true if they are in the MSQT program
 //
 // ============================================================
 
@@ -18,6 +19,7 @@ export type Member = {
   role: string;
   img: string;
   linkedin: string;
+  msqt?: boolean;
 };
 
 export const membersBySemester: Record<string, Member[]> = {
@@ -29,18 +31,21 @@ export const membersBySemester: Record<string, Member[]> = {
       role: "President",
       img: "/members/2026 Spring/justinoliver.JPG",
       linkedin: "https://www.linkedin.com/in/justin-oliver-5a7958238/",
+      msqt: true,
     },
     {
       name: "Alondra Torres Contreras",
       role: "Treasurer",
       img: "/members/2025 Fall/alondra.jpeg",
       linkedin: "https://www.linkedin.com/in/alondra-torres-contreras-68a68b227/",
+      msqt: true,
     },
     {
       name: "Chien-Chu (Charity) Wei",
       role: "Director",
       img: "/members/2026 Spring/charitywei.JPG",
       linkedin: "https://www.linkedin.com/in/chien-chu-wei-837452232/",
+      msqt: true,
     },
     {
       name: "Abhishek Roy",
@@ -53,12 +58,14 @@ export const membersBySemester: Record<string, Member[]> = {
       role: "R&D Committee Chair",
       img: "/members/2026 Spring/lucasmendez.JPG",
       linkedin: "https://www.linkedin.com/in/lucasmendez1/",
+      msqt: true,
     },
     {
       name: "Vaishnavi Rao",
       role: "Secretary",
       img: "/members/2026 Spring/vaishnavirao.JPG",
       linkedin: "",
+      msqt: true,
     },
     {
       name: "Nicholas Parrilla",
@@ -71,18 +78,21 @@ export const membersBySemester: Record<string, Member[]> = {
       role: "Member",
       img: "/members/2026 Spring/stephenreagin.JPG",
       linkedin: "https://www.linkedin.com/in/stephen-reagin-764007126/",
+      msqt: true,
     },
     {
       name: "Ella Zeng",
       role: "Member",
       img: "/members/2026 Spring/ellazeng.JPG",
       linkedin: "https://www.linkedin.com/in/ella-zeng-817952332/",
+      msqt: true,
     },
     {
       name: "Andre Li",
       role: "Member",
       img: "/members/2026 Spring/andreli.JPG",
       linkedin: "https://www.linkedin.com/in/andre-li-8a4003155/",
+      msqt: true,
     },
     {
       name: "Mariana Rojas-Montoya",
@@ -95,6 +105,7 @@ export const membersBySemester: Record<string, Member[]> = {
       role: "Member",
       img: "/members/2026 Spring/gabrielgaeta.JPG",
       linkedin: "https://www.linkedin.com/in/gabriel-gaeta/",
+      msqt: true,
     },
     {
       name: "Rami Javier Husseini",
@@ -107,18 +118,21 @@ export const membersBySemester: Record<string, Member[]> = {
       role: "Member",
       img: "/members/2026 Spring/vincentle.JPG",
       linkedin: "https://www.linkedin.com/in/vvvle/",
+      msqt: true,
     },
     {
       name: "Michael Chin",
       role: "Member",
       img: "/members/2026 Spring/mikechin.JPG",
       linkedin: "",
+      msqt: true,
     },
     {
       name: "Lawrence Nguyen",
       role: "Member",
       img: "/members/2026 Spring/lawrencenguyen.JPG",
       linkedin: "",
+      msqt: true,
     },
   ],
 
@@ -135,18 +149,21 @@ export const membersBySemester: Record<string, Member[]> = {
       role: "Vice President",
       img: "/members/2025 Fall/justin.jpg",
       linkedin: "https://www.linkedin.com/in/justin-oliver-5a7958238/",
+      msqt: true,
     },
     {
       name: "Alondra Torres Contreras",
       role: "Treasurer",
       img: "/members/2025 Fall/alondra.jpeg",
       linkedin: "https://www.linkedin.com/in/alondra-torres-contreras-68a68b227/",
+      msqt: true,
     },
     {
       name: "Chien-Chu (Charity) Wei",
       role: "Director",
       img: "/members/2025 Fall/charity.jpg",
       linkedin: "https://www.linkedin.com/in/chien-chu-wei-837452232/",
+      msqt: true,
     },
     {
       name: "Abhishek Roy",
@@ -159,30 +176,35 @@ export const membersBySemester: Record<string, Member[]> = {
       role: "R&D Committee Chair",
       img: "/members/2025 Fall/lucas.jpeg",
       linkedin: "https://www.linkedin.com/in/lucasmendez1/",
+      msqt: true,
     },
     {
       name: "Vaishnavi Rao",
       role: "Secretary",
       img: "/members/2025 Fall/vishnavi.jpg",
       linkedin: "",
+      msqt: true,
     },
     {
       name: "Stephen Reagin",
       role: "Member",
       img: "/members/2025 Fall/stephen.jpeg",
       linkedin: "https://www.linkedin.com/in/stephen-reagin-764007126/",
+      msqt: true,
     },
     {
       name: "Ella Zeng",
       role: "Member",
       img: "/members/2025 Fall/ella.jpeg",
       linkedin: "https://www.linkedin.com/in/ella-zeng-817952332/",
+      msqt: true,
     },
     {
       name: "Andre Li",
       role: "Member",
       img: "/members/2025 Fall/andre.png",
       linkedin: "https://www.linkedin.com/in/andre-li-8a4003155/",
+      msqt: true,
     },
     {
       name: "Mariana Rojas-Montoya",

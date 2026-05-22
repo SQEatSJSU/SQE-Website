@@ -54,7 +54,14 @@ function LeadershipGrid({ members }: { members: Member[] }) {
           <div className="flex mt-3 justify-between items-center">
             <div>
               <h2 className="text-sm font-semibold">{leader.name}</h2>
-              <p className="text-xs">{leader.role}</p>
+              <p className="text-xs flex items-center gap-1.5 flex-wrap">
+                <span>{leader.role}</span>
+                {leader.msqt && (
+                  <span className="text-[10px] font-semibold text-white">
+                    MSQT
+                  </span>
+                )}
+              </p>
             </div>
             {leader.linkedin && (
               <a
