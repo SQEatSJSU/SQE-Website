@@ -19,7 +19,7 @@ export default function AboutPage() {
 
       <section className="relative w-screen h-[70vh]">
         <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#181818] to-transparent z-20"></div>
-        <Image src="/community/2025-2026-cycle/unboxing.png" alt="SQE Team" fill priority className="object-cover" />
+        <Image src="/community/2025-2026-cycle/unboxing.jpg" alt="SQE Team" fill priority className="object-cover" />
         <div className="absolute inset-0 bg-black/40 flex items-start justify-center pt-16 sm:pt-20">
           <div className="text-center text-white px-6">
             <motion.h1

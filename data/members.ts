@@ -50,7 +50,7 @@ export const membersBySemester: Record<string, Member[]> = {
     {
       name: "Daman Singh",
       role: "Secretary",
-      img: "/members/2026 Fall/daman.png",
+      img: "/members/2026 Fall/daman.jpg",
       linkedin: "https://www.linkedin.com/in/daman-singh-63414728a/",
       msqt: true,
     },
@@ -63,7 +63,7 @@ export const membersBySemester: Record<string, Member[]> = {
     {
       name: "Mark Sotnikov",
       role: "Social Media Manager",
-      img: "/members/2026 Fall/mark.png",
+      img: "/members/2026 Fall/mark.jpg",
       linkedin: "https://www.linkedin.com/in/mark-sotnikov-a00152331/",
     },
     {
@@ -141,7 +141,7 @@ export const membersBySemester: Record<string, Member[]> = {
     {
       name: "Nicholas Parrilla",
       role: "Wormhole enthusiast",
-      img: "/members/2025 Fall/nic.png",
+      img: "/members/2025 Fall/nic.jpg",
       linkedin: "https://www.linkedin.com/in/nicholas-parrilla/",
     },
     {
@@ -212,7 +212,7 @@ export const membersBySemester: Record<string, Member[]> = {
     {
       name: "Nicholas Parrilla",
       role: "President",
-      img: "/members/2025 Fall/nic.png",
+      img: "/members/2025 Fall/nic.jpg",
       linkedin: "https://www.linkedin.com/in/nicholas-parrilla/",
     },
     {
@@ -273,7 +273,7 @@ export const membersBySemester: Record<string, Member[]> = {
     {
       name: "Andre Li",
       role: "Member",
-      img: "/members/2025 Fall/andre.png",
+      img: "/members/2025 Fall/andre.jpg",
       linkedin: "https://www.linkedin.com/in/andre-li-8a4003155/",
       msqt: true,
     },

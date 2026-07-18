@@ -29,7 +29,7 @@ export const eventsByCycle: Record<string, Event[]> = {
   "2025-2026": [
     {
       id: 8,
-      image: "/community/2025-2026-cycle/martinis.png",
+      image: "/community/2025-2026-cycle/martinis.jpg",
       title: "SQE Special Guest Meeting",
       speaker: "Dr. John Martinis (Nobel Laureate) and Alan Ho, CEO of Qolab",
       date: "April 22, 2026",
@@ -37,7 +37,7 @@ export const eventsByCycle: Record<string, Event[]> = {
     },
     {
       id: 9,
-      image: "/community/2025-2026-cycle/asfunding.png",
+      image: "/community/2025-2026-cycle/asfunding.jpg",
       title: "11th Annual Showcase Presentation",
       speaker: "Justin Oliver, Alondra Torres Contreras, Vaishnavi Rao, and Abhishek Roy",
       date: "April 21, 2026",
@@ -45,7 +45,7 @@ export const eventsByCycle: Record<string, Event[]> = {
     },
     {
       id: 7,
-      image: "/community/2025-2026-cycle/unboxing.png",
+      image: "/community/2025-2026-cycle/unboxing.jpg",
       title: "General Meeting",
       speaker: "SQE Leadership Team",
       date: "February 5, 2026",
@@ -53,7 +53,7 @@ export const eventsByCycle: Record<string, Event[]> = {
     },
     {
       id: 6,
-      image: "/community/2025-2026-cycle/iquhack.png",
+      image: "/community/2025-2026-cycle/iquhack.jpg",
       title: "iQuHACK 2026 — MIT Quantum Hackathon",
       speaker: "Justin Oliver, Abhishek Roy, and Chien-Chu Wei",
       date: "January 31 – February 1, 2026",
@@ -61,7 +61,7 @@ export const eventsByCycle: Record<string, Event[]> = {
     },
     {
       id: 5,
-      image: "/community/2025-2026-cycle/barttalk.png",
+      image: "/community/2025-2026-cycle/barttalk.jpg",
       title: "QuantWare's VIO 3D Architecture",
       speaker: "Bart Segers, QuantWare",
       date: "December 11, 2025",
@@ -69,7 +69,7 @@ export const eventsByCycle: Record<string, Event[]> = {
     },
     {
       id: 4,
-      image: "/community/2025-2026-cycle/luistalk.png",
+      image: "/community/2025-2026-cycle/luistalk.jpg",
       title: "Quantum Information Science — From Transmon Qubits to Microwave Kinetic Inductance Detectors",
       speaker: "Dr. Luis Martinez, Lawrence Livermore National Laboratory",
       date: "November 17, 2025",
@@ -77,7 +77,7 @@ export const eventsByCycle: Record<string, Event[]> = {
     },
     {
       id: 3,
-      image: "/community/2025-2026-cycle/ozgurtalk.png",
+      image: "/community/2025-2026-cycle/ozgurtalk.jpg",
       title: "Trapped Ion Computing",
       speaker: "Özgür Şahin, UC Berkeley",
       date: "November 3, 2025",
@@ -85,7 +85,7 @@ export const eventsByCycle: Record<string, Event[]> = {
     },
     {
       id: 2,
-      image: "/community/2025-2026-cycle/katietalk.png",
+      image: "/community/2025-2026-cycle/katietalk.jpg",
       title: "SQE Webinar",
       speaker: "Dr. Katherine Klymko",
       date: "October 27, 2025",
@@ -93,7 +93,7 @@ export const eventsByCycle: Record<string, Event[]> = {
     },
     {
       id: 1,
-      image: "/community/2025-2026-cycle/alextalk.png",
+      image: "/community/2025-2026-cycle/alextalk.jpg",
       title: "\"Searching for Dark Matter Axions with Quantum Sensors\"",
       speaker: "Dr. Alex Droster, Stanford University & SLAC",
       date: "October 13, 2025",

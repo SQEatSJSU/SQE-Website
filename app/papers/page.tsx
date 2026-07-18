@@ -45,7 +45,7 @@ export default function PapersPage() {
               <div className="rounded-lg border border-zinc-700 bg-zinc-900/50 p-4">
                 <div className="relative overflow-hidden rounded-md border border-zinc-700">
                   <Image
-                    src="/research/research1.png"
+                    src="/research/research1.jpg"
                     alt="Quantum Cryptography research poster"
                     width={1200}
                     height={750}
@@ -60,7 +60,7 @@ export default function PapersPage() {
               <div className="rounded-lg border border-zinc-700 bg-zinc-900/50 p-4">
                 <div className="relative overflow-hidden rounded-md border border-zinc-700">
                   <Image
-                    src="/research/kit.png"
+                    src="/research/kit.jpg"
                     alt="Quantum Cryptography demonstration kit setup"
                     width={1200}
                     height={750}
