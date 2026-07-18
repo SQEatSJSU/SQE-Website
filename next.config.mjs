@@ -6,6 +6,15 @@ const nextConfig = {
 	experimental: {
 		mdxRs: true,
 	},
+	async redirects() {
+		return [
+			{
+				source: "/apply",
+				destination: "/join",
+				permanent: true,
+			},
+		];
+	},
 };
 
 export default withContentlayer(nextConfig);

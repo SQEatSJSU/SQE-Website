@@ -25,7 +25,7 @@ export const Navigation: React.FC = () => {
 		{ href: "/projects", label: "Our Lab", external: false },
 		{ href: "/papers", label: "Research", external: false },
 		{ href: "/members", label: "Team", external: false },
-		{ href: "/apply", label: "Join", external: false },
+		{ href: "/join", label: "Join", external: false },
 	];
 
 	return (

@@ -30,7 +30,7 @@ export const SITE_BANNERS: Record<string, SiteBanner> = {
   "summer-break-discord": {
     id: "summer-break-discord",
     title: "Summer Break",
-    subtitle: "Join the SQE Discord",
+    subtitle: "Get involved this Fall semester!",
     ctaLabel: "Join Discord",
     ctaHref: "https://discord.gg/j5x7jWx3sa",
     ctaExternal: true,

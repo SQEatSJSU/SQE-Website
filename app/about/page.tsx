@@ -1,91 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Footer from "../components/footer";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-import { Laptop, Briefcase, Camera, Linkedin } from "lucide-react";
+import { Laptop, Briefcase, Camera } from "lucide-react";
 import Header from "../components/Header";
-import { membersBySemester, ALL_SEMESTERS, CURRENT_SEMESTER, type Member } from "../../data/members";
-
-function LeadershipGrid({ members }: { members: Member[] }) {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
-  return (
-    <motion.div
-      ref={ref}
-      className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 items-center justify-center gap-6 pb-6 content-center"
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      variants={{
-        hidden: {},
-        visible: { transition: { staggerChildren: 0.15 } },
-      }}
-    >
-      {members.map((leader, index) => (
-        <motion.div
-          key={leader.name}
-          className="w-48 mb-6 bg-transparent border-gray-700 text-slate-200"
-          variants={{
-            hidden: { opacity: 0, y: 20 },
-            visible: {
-              opacity: 1,
-              y: 0,
-              transition: { 
-                duration: 0.5, 
-                ease: "easeOut",
-                delay: index * 0.1 
-              },
-            },
-          }}
-        >
-          <figure>
-            <img
-              src={leader.img}
-              alt={leader.name}
-              className="w-full h-48 object-cover"
-            />
-          </figure>
-          <div className="flex mt-3 justify-between items-center">
-            <div>
-              <h2 className="text-sm font-semibold">{leader.name}</h2>
-              <p className="text-xs flex items-center gap-1.5 flex-wrap">
-                <span>{leader.role}</span>
-                {leader.msqt && (
-                  <span className="text-[10px] font-semibold text-white">
-                    MSQT
-                  </span>
-                )}
-              </p>
-            </div>
-            {leader.linkedin && (
-              <a
-                href={leader.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-1 transition-colors"
-                aria-label={`${leader.name} LinkedIn`}
-                title="LinkedIn"
-              >
-                <Linkedin className="w-4 h-4 text-zinc-400 hover:text-zinc-200 transition-colors" />
-              </a>
-            )}
-          </div>
-        </motion.div>
-      ))}
-    </motion.div>
-  );
-}
 
 export default function AboutPage() {
-  const [selectedSemester, setSelectedSemester] = useState(CURRENT_SEMESTER);
-  const members = membersBySemester[selectedSemester] ?? [];
-
   return (
     <div className="relative bg-[#181818]">
       <Head>
@@ -117,20 +40,18 @@ export default function AboutPage() {
         transition={{ duration: 1 }}
       >
         <div className="px-2 md:px-6 mx-auto space-y-16 max-w-7xl md:space-y-24 md:pt-6 lg:pt-10">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center">
-            <div className="lg:w-1/2 lg:pr-6">
-              <br />
-              <p className="mt-8 text-lg text-zinc-300">
-                SQE Society of Quantum Engineers is a student-led organization at San José State University dedicated to advancing quantum engineering and building a strong quantum community. We unite passionate students and faculty to explore the frontiers of quantum technology.
-              </p>
-              <br />
-              <p className="mb-8 text-lg text-zinc-300">
-                We are devoted to building the quantum community within SJSU, connecting faculty and students through research collaboration, educational events, and hands-on quantum engineering projects.</p>
-            </div>
-            <div className="lg:w-1/2 lg:pl-6 flex justify-center lg:justify-end">
-              <figure className="border border-white/20 rounded-lg overflow-hidden"><Image src="/community/blochlogo.png" width={400} height={240} alt="SQE Bloch Logo"/></figure>
-            </div>
-          </div>
+          <section className="max-w-3xl">
+            <h2 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+              About
+            </h2>
+            <p className="mt-8 text-lg text-zinc-300">
+              SQE Society of Quantum Engineers is a student-led organization at San José State University dedicated to advancing quantum engineering and building a strong quantum community. We unite passionate students and faculty to explore the frontiers of quantum technology.
+            </p>
+            <p className="mt-6 text-lg text-zinc-300">
+              We are devoted to building the quantum community within SJSU, connecting faculty and students through research collaboration, educational events, and hands-on quantum engineering projects.
+            </p>
+          </section>
+
           <section className="relative max-w-7xl mx-auto">
 
             <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-12">
@@ -176,31 +97,20 @@ export default function AboutPage() {
             </motion.div>
           </section>
 
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-center justify-between mb-12">
-              <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-                Members
-              </h1>
-
-              <div className="flex gap-2 flex-wrap justify-end">
-                {ALL_SEMESTERS.map((semester) => (
-                  <button
-                    key={semester}
-                    onClick={() => setSelectedSemester(semester)}
-                    className={`px-4 py-1.5 rounded-full text-sm font-medium border transition-colors ${
-                      selectedSemester === semester
-                        ? "bg-white text-black border-white"
-                        : "bg-transparent text-zinc-400 border-white/20 hover:border-white/50 hover:text-white"
-                    }`}
-                  >
-                    {semester}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <LeadershipGrid members={members} />
-          </div>
+          <section id="founders-story" className="max-w-3xl">
+            <h2 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+              Our Founder&apos;s Story
+            </h2>
+            <p className="mt-3 text-sm text-zinc-500">
+              Written by James Saslow
+            </p>
+            <p className="mt-8 text-lg text-zinc-300">
+              The Society of Quantum Engineers (SQE) @ San José State University (SJSU) student organization was founded by Brendan Stork, Zak Espley, Samuel Petruescu, and James Saslow in the year 2023.
+            </p>
+            <p className="mt-6 text-lg text-zinc-300">
+              Zak and Brendan were the first to envision SQE @ SJSU. During their exchange semester at the Colorado School of Mines as NRT Quantum Traineeship fellows, they witnessed the cohesiveness, community, and unity of the SQE @ Mines. They quickly recognized the problem about the quantum community at SJSU — We were scattered. We were a collection of students all involved in different coursework, separate areas of research, and without any medium to connect. Quantum engineering felt lonely. We were interdisciplinary, but not interconnected. We wanted to build both a support system and a professional network for quantum engineers at San José State.
+            </p>
+          </section>
         </div>
 
         <br />

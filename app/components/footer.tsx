@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 
 export default function Footer() {
   const pathname = usePathname();
-  const isApplyPage = pathname === "/apply";
+  const isJoinPage = pathname === "/join";
 
   return (
     <footer className="bg-[#181818] text-gray-300">
@@ -72,6 +72,9 @@ export default function Footer() {
               <Link href="/about" className="transition-colors duration-200 hover:text-gray-100">
                 About
               </Link>
+              <Link href="/members" className="transition-colors duration-200 hover:text-gray-100">
+                Members
+              </Link>
               <Link href="/community" className="transition-colors duration-200 hover:text-gray-100">
                 Community
               </Link>
@@ -82,8 +85,8 @@ export default function Footer() {
                 Research
               </Link>
 
-              {!isApplyPage && (
-              <Link href="/apply" className="transition-colors duration-200 hover:text-gray-100">
+              {!isJoinPage && (
+              <Link href="/join" className="transition-colors duration-200 hover:text-gray-100">
                 Join
               </Link>
               )}

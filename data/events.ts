@@ -115,8 +115,14 @@ export const eventsByCycle: Record<string, Event[]> = {
   ],
 
   // ── 2027-2028 CYCLE ────────────────────────────────────────
-  "2027-2028": [],
+  // Hidden until needed — uncomment to show the tab again:
+  // "2027-2028": [],
 };
 
-// Helper: get all cycle keys
-export const ALL_CYCLES = Object.keys(eventsByCycle);
+// Cycles with events, newest first (empty cycles stay in data until they have content)
+export const ALL_CYCLES = Object.keys(eventsByCycle)
+  .filter((cycle) => (eventsByCycle[cycle]?.length ?? 0) > 0)
+  .reverse();
+
+/** Default cycle (top of page / initial pill highlight) */
+export const DEFAULT_CYCLE = ALL_CYCLES[0] ?? Object.keys(eventsByCycle).reverse()[0];

@@ -24,7 +24,78 @@ export type Member = {
 
 export const membersBySemester: Record<string, Member[]> = {
 
-  // ── 2026 SPRING (current) ─────────────────────────────────
+  // ── 2026 FALL (upcoming) ──────────────────────────────────
+  "Fall 2026": [
+    {
+      name: "Justin Oliver",
+      role: "President",
+      img: "/members/2026 Spring/justinoliver.JPG",
+      linkedin: "https://www.linkedin.com/in/justin-oliver-5a7958238/",
+      msqt: true,
+    },
+    {
+      name: "Chetan Malik",
+      role: "Vice President",
+      img: "/members/2026 Fall/chetan.jpeg",
+      linkedin: "https://www.linkedin.com/in/chetan-malik-6a639b30/",
+      msqt: true,
+    },
+    {
+      name: "Gabriele Nicula",
+      role: "Treasurer",
+      img: "/members/2026 Fall/nicula.jpg",
+      linkedin: "https://www.linkedin.com/in/gabriele-nicula-9847241aa/",
+      msqt: true,
+    },
+    {
+      name: "Daman Singh",
+      role: "Secretary",
+      img: "/members/2026 Fall/daman.png",
+      linkedin: "https://www.linkedin.com/in/daman-singh-63414728a/",
+      msqt: true,
+    },
+    {
+      name: "Abhishek Roy",
+      role: "Project Manager",
+      img: "/members/2026 Spring/abhishekroy.JPG",
+      linkedin: "https://www.linkedin.com/in/abhishek-roy737/",
+    },
+    {
+      name: "Mark Sotnikov",
+      role: "Social Media Manager",
+      img: "/members/2026 Fall/mark.png",
+      linkedin: "https://www.linkedin.com/in/mark-sotnikov-a00152331/",
+    },
+    {
+      name: "Stephen Reagin",
+      role: "Member",
+      img: "/members/2026 Spring/stephenreagin.JPG",
+      linkedin: "https://www.linkedin.com/in/stephen-reagin-764007126/",
+      msqt: true,
+    },
+    {
+      name: "Gabriel Gaeta",
+      role: "Member",
+      img: "/members/2026 Spring/gabrielgaeta.JPG",
+      linkedin: "https://www.linkedin.com/in/gabriel-gaeta/",
+    },
+    {
+      name: "Vincent Le",
+      role: "Member",
+      img: "/members/2026 Spring/vincentle.JPG",
+      linkedin: "https://www.linkedin.com/in/vvvle/",
+      msqt: true,
+    },
+    {
+      name: "Michael Chin",
+      role: "Member",
+      img: "/members/2026 Spring/mikechin.JPG",
+      linkedin: "",
+      msqt: true,
+    },
+  ],
+
+  // ── 2026 SPRING ───────────────────────────────────────────
   "Spring 2026": [
     {
       name: "Justin Oliver",

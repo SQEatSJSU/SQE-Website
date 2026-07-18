@@ -3,9 +3,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import SiteBannerBar from "./SiteBanner";
 
 export default function Header() {
+  const pathname = usePathname();
+  const isJoinPage = pathname === "/join";
+
   return (
     <div className="w-screen bg-[#181818] text-xs">
       <SiteBannerBar />
@@ -42,6 +46,11 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
+                  <Link className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/members">
+                    Members
+                  </Link>
+                </li>
+                <li>
                   <Link className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/community">
                     Community
                   </Link>
@@ -56,14 +65,16 @@ export default function Header() {
                     Research
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent"
-                    href="/apply"
-                  >
-                    Join
-                  </Link>
-                </li>
+                {!isJoinPage && (
+                  <li>
+                    <Link
+                      className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent"
+                      href="/join"
+                    >
+                      Join
+                    </Link>
+                  </li>
+                )}
               </ul>
           </div>
           <Link href="/" className="hover:bg-transparent active:bg-transparent ml-2">
@@ -86,6 +97,9 @@ export default function Header() {
                   <Link href="/about" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">About</Link>
                 </li>
                 <li>
+                  <Link href="/members" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">Members</Link>
+                </li>
+                <li>
                   <Link href="/community" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">Community</Link>
                 </li>
                 <li>
@@ -99,12 +113,14 @@ export default function Header() {
           </div>
         </div>
         <div className="navbar-end">
-          <Link 
-            href="/apply" 
-            className="inline-flex items-center px-5 py-3 mr-2 bg-transparent border border-white text-white text-sm font-medium rounded-full hover:border-zinc-500 hover:text-zinc-300 transition-colors duration-300"
-          >
-            Join
-          </Link>
+          {!isJoinPage && (
+            <Link 
+              href="/join" 
+              className="inline-flex items-center px-5 py-3 mr-2 bg-transparent border border-white text-white text-sm font-medium rounded-full hover:border-zinc-500 hover:text-zinc-300 transition-colors duration-300"
+            >
+              Join
+            </Link>
+          )}
         </div>
       </div>
     </div>
