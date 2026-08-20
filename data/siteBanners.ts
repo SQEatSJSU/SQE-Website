@@ -53,6 +53,12 @@ export const SITE_BANNERS: Record<string, SiteBanner> = {
   },
 };
 
+/**
+ * Summer Break banner is currently hidden.
+ * Change this to true to bring the top banner back.
+ */
+export const SHOW_TOP_BANNER = false;
+
 /** Set to null to hide the top banner entirely */
 export const ACTIVE_BANNER_ID: string | null = "summer-break-discord";
 

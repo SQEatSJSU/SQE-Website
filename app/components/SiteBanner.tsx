@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   type SiteBanner,
+  SHOW_TOP_BANNER,
   ACTIVE_BANNER_ID,
   AUTO_ROTATE_BANNERS,
   ROTATING_BANNER_IDS,
@@ -100,7 +101,7 @@ export default function SiteBannerBar() {
     return () => window.clearInterval(interval);
   }, []);
 
-  const banner = bannerId ? getBannerById(bannerId) : null;
+  const banner = SHOW_TOP_BANNER && bannerId ? getBannerById(bannerId) : null;
   if (!banner) return null;
 
   return (

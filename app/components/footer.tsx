@@ -25,12 +25,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:w-1/3 md:justify-end">
           <div>
             <h2 className="text-lg font-bold mb-4">Contact</h2>
-            <a 
-              href="mailto:sjsu.quantum@gmail.com" 
-              className="flex items-center hover:text-gray-100 transition-colors duration-200"
-            >
-              <span>Email</span>
-            </a>
+            <nav className="flex flex-col gap-2">
+              <a
+                href="mailto:sjsu.quantum@gmail.com"
+                className="hover:text-gray-100 transition-colors duration-200"
+              >
+                Email
+              </a>
+              <Link href="/qr-codes" className="hover:text-gray-100 transition-colors duration-200">
+                QR Codes
+              </Link>
+            </nav>
           </div>
           
           <div>
