@@ -2,23 +2,37 @@ import type { Metadata } from "next";
 import { QRCodeSVG } from "qrcode.react";
 import Header from "../components/Header";
 import Footer from "../components/footer";
+import { sammyAppSignupUrl, semesterDuesAmount, squarePaymentUrl } from "@/data/joinLinks";
 
 const websiteUrl = "https://sqeatsjsu.org";
 const discordUrl = "https://discord.gg/j5x7jWx3sa";
 
 export const metadata: Metadata = {
   title: "QR Codes | SQE Society of Quantum Engineers at SJSU",
-  description: "Scan QR codes to visit the SQE website or join the SQE Discord community.",
+  description:
+    "Scan QR codes to visit the SQE website, join Discord, or pay semester dues.",
 };
 
 const qrCodes = [
   {
     title: "SQE Website",
+    subtitle: "Visit sqeatsjsu.org",
     url: websiteUrl,
   },
   {
     title: "SQE Discord",
+    subtitle: "Join our community server",
     url: discordUrl,
+  },
+  {
+    title: "Pay Semester Dues",
+    subtitle: `Square payment — ${semesterDuesAmount} per semester`,
+    url: squarePaymentUrl,
+  },
+  {
+    title: "Join on Sammy App",
+    subtitle: "Request to join SQE on SJSU Sammy App",
+    url: sammyAppSignupUrl,
   },
 ];
 
@@ -35,7 +49,7 @@ export default function QRCodesPage() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {qrCodes.map((qrCode) => (
               <section
                 key={qrCode.title}
@@ -55,6 +69,7 @@ export default function QRCodesPage() {
                 <h2 className="mt-6 text-xl font-semibold text-white">
                   {qrCode.title}
                 </h2>
+                <p className="mt-2 text-sm text-zinc-400">{qrCode.subtitle}</p>
               </section>
             ))}
           </div>

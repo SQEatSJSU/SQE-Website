@@ -5,18 +5,17 @@ export const metadata: Metadata = {
 		default: "Join | SQE Society of Quantum Engineers at SJSU",
 		template: "%s",
 	},
-	description: "Revolutioning sports success through data science and machine learning at UC Davis.",
+	description: "Join the Society of Quantum Engineers at SJSU.",
 	openGraph: {
 		title: "SQE Society of Quantum Engineers at SJSU",
-		description:
-			"Revolutioning sports success through data science and machine learning.",
-		url: "aggiesportsanalytics.com",
-		siteName: "aggiesportsanalytics.com",
+		description: "Join the Society of Quantum Engineers at SJSU.",
+		url: "https://sqeatsjsu.org/join",
+		siteName: "SQE at SJSU",
 		images: [
 			{
-				url: "/whiteLogo.jpg",
-				width: 1920,
-				height: 1080,
+				url: "https://sqeatsjsu.org/favicon.png",
+				width: 512,
+				height: 512,
 			},
 		],
 		locale: "en-US",
@@ -34,7 +33,7 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "AggieSportsAnalytics",
+		title: "SQE_SJSU",
 		card: "summary_large_image",
 	},
 	icons: {

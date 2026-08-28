@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "SQE Society of Quantum Engineers at SJSU",
 		description:
-			"Revolutioning sports success through data science and machine learning.",
-		url: "https://sqeatsjsu.org",
-		siteName: "https://sqeatsjsu.org",
+			"Building the quantum community within SJSU, connecting faculty and students.",
+		url: "https://sqeatsjsu.org/about",
+		siteName: "SQE at SJSU",
 		images: [
 			{
-				url: "/whiteLogo.jpg",
-				width: 1920,
-				height: 1080,
+				url: "https://sqeatsjsu.org/favicon.png",
+				width: 512,
+				height: 512,
 			},
 		],
 		locale: "en-US",

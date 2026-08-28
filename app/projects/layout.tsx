@@ -12,13 +12,13 @@ export const metadata: Metadata = {
 		title: "SQE Society of Quantum Engineers",
 		description:
 			"Building the quantum community within SJSU through research collaboration and education.",
-		url: "sqe-sjsu.com",
-		siteName: "sqe-sjsu.com",
+		url: "https://sqeatsjsu.org/projects",
+		siteName: "SQE at SJSU",
 		images: [
 			{
-				url: "/whiteLogo.jpg",
-				width: 1920,
-				height: 1080,
+				url: "https://sqeatsjsu.org/favicon.png",
+				width: 512,
+				height: 512,
 			},
 		],
 		locale: "en-US",
