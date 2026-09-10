@@ -10,7 +10,7 @@ type Props = {
 export const Article: React.FC<Props> = ({ project, views }) => {
 	return (
 
-		<Link href={`/projects/${project.slug}`}>
+		<Link href={`/lab/${project.slug}`}>
 			<Head>
 				<title>{project.title} | SQE Society of Quantum Engineers at SJSU</title>
 			</Head>

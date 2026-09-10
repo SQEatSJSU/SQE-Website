@@ -179,7 +179,7 @@ export default function JoinUsPage() {
 									<span className="shrink-0 text-white font-semibold">5.</span>
 									<span>
 										To get involved in a project, check out{" "}
-										<a href="/papers" className={linkClass}>
+										<a href="/research" className={linkClass}>
 											Research
 										</a>{" "}
 										and the Discord project channels for more info. To join, feel

@@ -13,6 +13,21 @@ const nextConfig = {
 				destination: "/join",
 				permanent: true,
 			},
+			{
+				source: "/papers",
+				destination: "/research",
+				permanent: true,
+			},
+			{
+				source: "/projects",
+				destination: "/lab",
+				permanent: true,
+			},
+			{
+				source: "/projects/:slug",
+				destination: "/lab/:slug",
+				permanent: true,
+			},
 		];
 	},
 };

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 		title: "SQE Society of Quantum Engineers",
 		description:
 			"Building the quantum community within SJSU through research collaboration and education.",
-		url: "https://sqeatsjsu.org/projects",
+		url: "https://sqeatsjsu.org/lab",
 		siteName: "SQE at SJSU",
 		images: [
 			{
