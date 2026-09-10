@@ -84,7 +84,7 @@ export default function Footer() {
                 Community
               </Link>
               <Link href="/projects" className="transition-colors duration-200 hover:text-gray-100">
-                Our Lab
+                The Lab
               </Link>
               <Link href="/papers" className="transition-colors duration-200 hover:text-gray-100">
                 Research

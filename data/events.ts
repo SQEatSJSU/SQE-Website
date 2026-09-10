@@ -101,17 +101,32 @@ export const eventsByCycle: Record<string, Event[]> = {
     },
   ],
 
-  // ── 2026-2027 CYCLE ────────────────────────────────────────
+  // ── 2026-2027 CYCLE ── most recent at top ──────────────────
   "2026-2027": [
-    // Add events here, most recent first. Example:
-    // {
-    //   id: 1,
-    //   image: "/community/2026-2027-cycle/speakername.png",
-    //   title: "Talk Title",
-    //   speaker: "Speaker Name, Affiliation",
-    //   date: "Month Day, Year",
-    //   description: "Short description of the event.",
-    // },
+    {
+      id: 3,
+      image: "/community/2026-2027-cycle/mckinney.png",
+      title: "SQE Special Guest Meeting",
+      speaker: "Jonathan McKinney, Chief of Technology, H2O.ai",
+      date: "September 2, 2026",
+      description: "SQE and Physics Club hosted a private Q&A with Jonathan McKinney, Chief of Technology at H2O.ai. A former University of Maryland physics professor, McKinney discussed his path from theoretical physics to AI research, graduate school, and careers in industry.",
+    },
+    {
+      id: 2,
+      image: "/community/2026-2027-cycle/firstmeeting.png",
+      title: "General Meeting",
+      speaker: "SQE Leadership Team",
+      date: "August 28, 2026",
+      description: "Club + officer introductions, an overview of the year ahead, a tour of the lab SQE has access to, and a coffee run to Philz.",
+    },
+    {
+      id: 1,
+      image: "/community/2026-2027-cycle/llnl.jpg",
+      title: "Real-World Quantum Computing Workshop",
+      speaker: "Gabriel Gaeta, Mark Sotnikov, and Justin Oliver",
+      date: "August 20–21, 2026",
+      description: "Gabriel, Mark, and Justin attended the two-day Real-World Quantum Computing workshop jointly hosted by Lawrence Livermore National Laboratory and San José State University in Livermore, covering opportunities and challenges in superconducting quantum hardware.",
+    },
   ],
 
   // ── 2027-2028 CYCLE ────────────────────────────────────────

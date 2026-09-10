@@ -4,7 +4,7 @@ import type { Project } from "@/.contentlayer/generated";
 
 export const metadata: Metadata = {
 	title: {
-		default: "Our Lab | SQE Society of Quantum Engineers",
+		default: "The Lab | SQE Society of Quantum Engineers",
 		template: "%s",
 	},
 	description: "Building the quantum community within SJSU through research collaboration and education.",

@@ -3,7 +3,6 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { QRCodeSVG } from "qrcode.react";
 import Header from "../components/Header";
 import Footer from "../components/footer";
 import {
@@ -13,123 +12,170 @@ import {
 	squarePaymentUrl,
 } from "@/data/joinLinks";
 
+const discordUrl = "https://discord.gg/j5x7jWx3sa";
+
+const linkClass =
+	"text-zinc-300 underline underline-offset-4 hover:text-white";
+
+const membershipBenefits = [
+	"Lifetime membership in the society for connections",
+	"Access to club hardware, including the Thorlabs BB84 quantum cryptography kit",
+	"Website photo and LinkedIn presence",
+	"Support the club — dues help fund hardware, events, and trips",
+	"Talks, workshops, and trips with researchers and industry",
+];
+
 export default function JoinUsPage() {
 	return (
 		<div className="relative min-h-screen flex flex-col bg-[#181818] text-white overflow-hidden">
 			<Head>
 				<title>Join SQE | Society of Quantum Engineers at SJSU</title>
-				<style>{`
-          @media (min-width: 640px) {
-            .image-container-wrapper {
-              border-radius: 0.5rem;
-            }
-            .image-container-wrapper > * {
-              border-radius: inherit;
-            }
-          }
-        `}</style>
 			</Head>
 			<Header />
 
 			<main className="relative flex-grow flex flex-col">
-				<div className="relative w-full h-64 overflow-hidden image-container-wrapper">
-					<div className="absolute inset-0 overflow-hidden">
+				<div className="w-full flex items-center justify-center px-6 md:px-12 pt-8">
+					<motion.h1
+						className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-center"
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+					>
+						Become a Member of SQE
+					</motion.h1>
+				</div>
+
+				<motion.div
+					className="relative mt-8 grid w-full grid-cols-[2fr_3fr] aspect-[5/2] overflow-hidden border-y border-white/10"
+					initial={{ opacity: 0, y: 20 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
+				>
+					<div className="relative h-full overflow-hidden bg-[#1856a5]">
 						<Image
 							src="/community/blochlogo.png"
 							alt="SQE Bloch Logo"
 							fill
 							priority
+							sizes="40vw"
 							className="object-contain"
 						/>
 					</div>
-					<div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#181818] z-10"></div>
-					<div className="absolute inset-0 bg-gradient-to-t from-[#181818]/30 via-transparent to-[#181818]/30 z-10"></div>
-					<div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#181818] to-transparent z-20"></div>
-				</div>
+					<div className="relative h-full overflow-hidden">
+						<Image
+							src="/community/2026-2027-cycle/firstmeeting.png"
+							alt="SQE members at the first general meeting of the 2026–2027 cycle"
+							fill
+							priority
+							sizes="60vw"
+							className="object-cover object-[center_42%]"
+						/>
+					</div>
+				</motion.div>
 
-				<div className="w-full flex items-center justify-center px-6 md:px-12 py-8">
-					<div className="max-w-lg text-center">
-						<motion.h1
-							className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight"
+				<div className="w-full flex items-center justify-center px-6 md:px-12 py-8 pb-16">
+					<div className="w-full max-w-2xl">
+						<motion.section
+							className="mt-12"
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.8, ease: "easeOut" }}
+							transition={{ duration: 0.8, delay: 0.25, ease: "easeOut" }}
 						>
-							Become a Member of SQE
-						</motion.h1>
+							<h2 className="text-2xl sm:text-3xl font-semibold text-white">
+								Membership Benefits
+							</h2>
+							<ul className="mt-6 space-y-3 text-zinc-400">
+								{membershipBenefits.map((benefit) => (
+									<li key={benefit} className="flex gap-3 text-sm sm:text-base">
+										<span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-500" />
+										<span>{benefit}</span>
+									</li>
+								))}
+							</ul>
+						</motion.section>
 
-						<motion.div
-							className="mt-10 flex flex-col items-center gap-6"
+						<motion.section
+							className="mt-12"
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+							transition={{ duration: 0.8, delay: 0.35, ease: "easeOut" }}
 						>
-							<div className="rounded-xl bg-white p-3 shadow-2xl shadow-black/30">
-								<QRCodeSVG
-									value={squarePaymentUrl}
-									size={180}
-									level="H"
-									marginSize={1}
-									bgColor="#ffffff"
-									fgColor="#181818"
-									title="Square payment QR code"
-								/>
-							</div>
-							<p className="text-sm text-zinc-400">
-								Scan or click{" "}
-								<a
-									href={squarePaymentUrl}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="text-zinc-300 underline underline-offset-4 hover:text-white"
-								>
-									this link
-								</a>{" "}
-								to pay your {semesterDuesAmount} semester dues.
-							</p>
-
-							<p className="text-sm text-zinc-400">
-								Take a screenshot of the payment and submit it to the{" "}
-								<a
-									href={paymentConfirmationFormUrl}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="text-zinc-300 underline underline-offset-4 hover:text-white"
-								>
-									confirmation form
-								</a>
-								, and{" "}
-								<a
-									href={sammyAppSignupUrl}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="text-zinc-300 underline underline-offset-4 hover:text-white"
-								>
-									request to join on the Sammy App
-								</a>
-								. Join the{" "}
-								<a
-									href="https://discord.gg/j5x7jWx3sa"
-									target="_blank"
-									rel="noopener noreferrer"
-									className="text-zinc-300 underline underline-offset-4 hover:text-white"
-								>
-									Discord
-								</a>{" "}
-								if you haven&apos;t already.
-							</p>
-
-							<p className="text-sm text-zinc-400">
-								To be added to the website,{" "}
-								<a
-									href="/members"
-									className="text-zinc-300 underline underline-offset-4 hover:text-white"
-								>
-									message leadership
-								</a>{" "}
-								to request to schedule a photo.
-							</p>
-						</motion.div>
+							<h2 className="text-2xl sm:text-3xl font-semibold text-white">
+								Steps to Officially Join
+							</h2>
+							<ol className="mt-6 space-y-5 text-sm sm:text-base text-zinc-400">
+								<li className="flex gap-4">
+									<span className="shrink-0 text-white font-semibold">1.</span>
+									<span>
+										Click{" "}
+										<a
+											href={squarePaymentUrl}
+											target="_blank"
+											rel="noopener noreferrer"
+											className={linkClass}
+										>
+											this link
+										</a>{" "}
+										to pay your {semesterDuesAmount} semester dues.
+									</span>
+								</li>
+								<li className="flex gap-4">
+									<span className="shrink-0 text-white font-semibold">2.</span>
+									<span>
+										Take a screenshot of the payment and submit it to the{" "}
+										<a
+											href={paymentConfirmationFormUrl}
+											target="_blank"
+											rel="noopener noreferrer"
+											className={linkClass}
+										>
+											confirmation form
+										</a>
+										.
+									</span>
+								</li>
+								<li className="flex gap-4">
+									<span className="shrink-0 text-white font-semibold">3.</span>
+									<span>
+										Request to join on the{" "}
+										<a
+											href={sammyAppSignupUrl}
+											target="_blank"
+											rel="noopener noreferrer"
+											className={linkClass}
+										>
+											Sammy App
+										</a>
+										.
+									</span>
+								</li>
+								<li className="flex gap-4">
+									<span className="shrink-0 text-white font-semibold">4.</span>
+									<span>
+										Join the{" "}
+										<a
+											href={discordUrl}
+											target="_blank"
+											rel="noopener noreferrer"
+											className={linkClass}
+										>
+											Discord
+										</a>{" "}
+										if you haven&apos;t already.
+									</span>
+								</li>
+								<li className="flex gap-4">
+									<span className="shrink-0 text-white font-semibold">5.</span>
+									<span>
+										To appear on the website,{" "}
+										<a href="/members" className={linkClass}>
+											message leadership
+										</a>{" "}
+										to schedule a photo.
+									</span>
+								</li>
+							</ol>
+						</motion.section>
 					</div>
 				</div>
 			</main>

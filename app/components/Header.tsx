@@ -57,7 +57,7 @@ export default function Header() {
                 </li>
                 <li>
                   <Link className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/projects">
-                    Our Lab
+                    The Lab
                   </Link>
                 </li>
                 <li>
@@ -103,7 +103,7 @@ export default function Header() {
                   <Link href="/community" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">Community</Link>
                 </li>
                 <li>
-                  <Link href="/projects" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">Our Lab</Link>
+                  <Link href="/projects" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">The Lab</Link>
                 </li>
                 <li>
                   <Link href="/papers" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">Research</Link>
