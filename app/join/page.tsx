@@ -13,6 +13,7 @@ import {
 } from "@/data/joinLinks";
 
 const discordUrl = "https://discord.gg/j5x7jWx3sa";
+const instagramUrl = "https://www.instagram.com/sqeatsjsu/";
 
 const linkClass =
 	"text-zinc-300 underline underline-offset-4 hover:text-white";
@@ -161,11 +162,32 @@ export default function JoinUsPage() {
 										>
 											Discord
 										</a>{" "}
-										if you haven&apos;t already.
+										and verify to get access to all channels, and follow the{" "}
+										<a
+											href={instagramUrl}
+											target="_blank"
+											rel="noopener noreferrer"
+											className={linkClass}
+										>
+											Instagram
+										</a>{" "}
+										if you haven&apos;t already. Announcements for meetings
+										will be posted on both.
 									</span>
 								</li>
 								<li className="flex gap-4">
 									<span className="shrink-0 text-white font-semibold">5.</span>
+									<span>
+										To get involved in a project, check out{" "}
+										<a href="/papers" className={linkClass}>
+											Research
+										</a>{" "}
+										and the Discord project channels for more info. To join, feel
+										free to send a message to the specific channel.
+									</span>
+								</li>
+								<li className="flex gap-4">
+									<span className="shrink-0 text-white font-semibold">6.</span>
 									<span>
 										To appear on the website,{" "}
 										<a href="/members" className={linkClass}>

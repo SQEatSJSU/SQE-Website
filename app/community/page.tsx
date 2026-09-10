@@ -5,10 +5,16 @@ import Footer from "../components/footer";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import Header from "../components/Header";
+import EventImageLightbox from "../components/EventImageLightbox";
 import { eventsByCycle, ALL_CYCLES, DEFAULT_CYCLE } from "@/data/events";
+
+const allCommunityEvents = ALL_CYCLES.flatMap(
+  (cycle) => eventsByCycle[cycle] ?? [],
+);
 
 export default function CommunityPage() {
   const [activeCycle, setActiveCycle] = useState(DEFAULT_CYCLE);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -95,6 +101,10 @@ export default function CommunityPage() {
 
             {ALL_CYCLES.map((cycle) => {
               const events = eventsByCycle[cycle] ?? [];
+              const cycleStartIndex = ALL_CYCLES.slice(
+                0,
+                ALL_CYCLES.indexOf(cycle),
+              ).reduce((sum, c) => sum + (eventsByCycle[c]?.length ?? 0), 0);
 
               return (
                 <section
@@ -125,13 +135,18 @@ export default function CommunityPage() {
                             ease: "easeOut",
                           }}
                         >
-                          <div className="w-full h-80 overflow-hidden mb-4 mx-auto">
+                          <button
+                            type="button"
+                            onClick={() => setLightboxIndex(cycleStartIndex + index)}
+                            className="w-full h-80 overflow-hidden mb-4 mx-auto cursor-zoom-in"
+                            aria-label={`View larger photo of ${event.title}`}
+                          >
                             <img
                               src={event.image}
                               alt={event.title}
                               className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             />
-                          </div>
+                          </button>
 
                           <p className="text-zinc-500 text-sm mb-1">
                             {event.date}
@@ -165,6 +180,14 @@ export default function CommunityPage() {
       <br />
       <div className="w-full h-px bg-zinc-800" />
       <Footer />
+      {lightboxIndex !== null && (
+        <EventImageLightbox
+          events={allCommunityEvents}
+          index={lightboxIndex}
+          onClose={() => setLightboxIndex(null)}
+          onIndexChange={setLightboxIndex}
+        />
+      )}
     </div>
   );
 }
