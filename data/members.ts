@@ -93,6 +93,18 @@ export const membersBySemester: Record<string, Member[]> = {
       linkedin: "",
       msqt: true,
     },
+    {
+      name: "Noah Arias",
+      role: "Member",
+      img: "/members/2026 Fall/noaharias.png",
+      linkedin: "https://www.linkedin.com/in/noah-arias-9aa7b61a3/",
+    },
+    {
+      name: "Eugene Lytnev",
+      role: "Member",
+      img: "/members/2026 Fall/eugenelytnev.png",
+      linkedin: "https://www.linkedin.com/in/eugl/",
+    },
   ],
 
   // ── 2026 SPRING ───────────────────────────────────────────
@@ -204,6 +216,12 @@ export const membersBySemester: Record<string, Member[]> = {
       img: "/members/2026 Spring/lawrencenguyen.JPG",
       linkedin: "",
       msqt: true,
+    },
+    {
+      name: "Eugene Lytnev",
+      role: "Member",
+      img: "/members/2026 Fall/eugenelytnev.png",
+      linkedin: "https://www.linkedin.com/in/eugl/",
     },
   ],
 
