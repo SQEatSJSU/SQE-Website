@@ -189,11 +189,26 @@ export default function JoinUsPage() {
 								<li className="flex gap-4">
 									<span className="shrink-0 text-white font-semibold">6.</span>
 									<span>
-										To appear on the website,{" "}
+										To appear on{" "}
 										<a href="/members" className={linkClass}>
-											message leadership
+											Members
+										</a>, send your LinkedIn profile and/or a photo. DM the
+										president on{" "}
+										<a
+											href={discordUrl}
+											target="_blank"
+											rel="noopener noreferrer"
+											className={linkClass}
+										>
+											Discord
 										</a>{" "}
-										to schedule a photo.
+										or email{" "}
+										<a
+											href="mailto:sjsu.quantum@gmail.com"
+											className={linkClass}
+										>
+											sjsu.quantum@gmail.com
+										</a>.
 									</span>
 								</li>
 							</ol>
