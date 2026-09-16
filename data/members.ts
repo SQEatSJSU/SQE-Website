@@ -96,13 +96,13 @@ export const membersBySemester: Record<string, Member[]> = {
     {
       name: "Noah Arias",
       role: "Member",
-      img: "/members/2026 Fall/noaharias.png",
+      img: "/members/2026 Fall/noaharias.webp",
       linkedin: "https://www.linkedin.com/in/noah-arias-9aa7b61a3/",
     },
     {
       name: "Eugene Lytnev",
       role: "Member",
-      img: "/members/2026 Fall/eugenelytnev.png",
+      img: "/members/2026 Fall/eugenelytnev.webp",
       linkedin: "https://www.linkedin.com/in/eugl/",
     },
   ],
@@ -220,7 +220,7 @@ export const membersBySemester: Record<string, Member[]> = {
     {
       name: "Eugene Lytnev",
       role: "Member",
-      img: "/members/2026 Fall/eugenelytnev.png",
+      img: "/members/2026 Fall/eugenelytnev.webp",
       linkedin: "https://www.linkedin.com/in/eugl/",
     },
   ],

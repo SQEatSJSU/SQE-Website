@@ -65,7 +65,7 @@ export default function JoinUsPage() {
 					</div>
 					<div className="relative h-full overflow-hidden">
 						<Image
-							src="/community/2026-2027-cycle/firstmeeting.png"
+							src="/community/2026-2027-cycle/firstmeeting.webp"
 							alt="SQE members at the first general meeting of the 2026–2027 cycle"
 							fill
 							priority

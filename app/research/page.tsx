@@ -177,10 +177,10 @@ export default function ResearchPage() {
             <div className="rounded-lg border border-zinc-700 bg-zinc-900/50 p-4 mb-8">
               <div className="relative overflow-hidden rounded-md border border-zinc-700">
                 <Image
-                  src="/research/aierror.png"
+                  src="/research/aierror.webp"
                   alt="Surface-code syndrome data and a neural decoder beside superconducting quantum hardware"
-                  width={1024}
-                  height={585}
+                  width={1600}
+                  height={891}
                   className="h-auto w-full object-cover"
                 />
               </div>

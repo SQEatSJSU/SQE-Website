@@ -105,7 +105,7 @@ export const eventsByCycle: Record<string, Event[]> = {
   "2026-2027": [
     {
       id: 3,
-      image: "/community/2026-2027-cycle/mckinney.png",
+      image: "/community/2026-2027-cycle/mckinney.webp",
       title: "SQE Special Guest Meeting",
       speaker: "Jonathan McKinney, Chief of Technology, H2O.ai",
       date: "September 2, 2026",
@@ -113,7 +113,7 @@ export const eventsByCycle: Record<string, Event[]> = {
     },
     {
       id: 2,
-      image: "/community/2026-2027-cycle/firstmeeting.png",
+      image: "/community/2026-2027-cycle/firstmeeting.webp",
       title: "General Meeting",
       speaker: "SQE Leadership Team",
       date: "August 28, 2026",
@@ -121,7 +121,7 @@ export const eventsByCycle: Record<string, Event[]> = {
     },
     {
       id: 1,
-      image: "/community/2026-2027-cycle/llnl.jpg",
+      image: "/community/2026-2027-cycle/llnl.webp",
       title: "Real-World Quantum Computing Workshop",
       speaker: "Gabriel Gaeta, Mark Sotnikov, and Justin Oliver",
       date: "August 20–21, 2026",

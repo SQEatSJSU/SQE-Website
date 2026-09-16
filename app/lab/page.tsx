@@ -16,19 +16,19 @@ const labPhotoVersion = "20260909";
 
 const labPhotos = [
 	{
-		src: `/community/lab/lab1.png?v=${labPhotoVersion}`,
+		src: `/community/lab/lab1.webp?v=${labPhotoVersion}`,
 		alt: "Parameter Space workbenches, electronics, and tools in Duncan Hall 343",
 	},
 	{
-		src: `/community/lab/lab2.png?v=${labPhotoVersion}`,
+		src: `/community/lab/lab2.webp?v=${labPhotoVersion}`,
 		alt: "Parameter Space windows, fume hood, and shared workstations",
 	},
 	{
-		src: `/community/lab/lab3.png?v=${labPhotoVersion}`,
+		src: `/community/lab/lab3.webp?v=${labPhotoVersion}`,
 		alt: "SQE BB84 quantum cryptography kit stored in Parameter Space",
 	},
 	{
-		src: `/community/lab/lab4.png?v=${labPhotoVersion}`,
+		src: `/community/lab/lab4.webp?v=${labPhotoVersion}`,
 		alt: "Soldering and electronics workstation in Parameter Space",
 	},
 ];
