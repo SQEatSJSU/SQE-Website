@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Header from "../components/Header";
 import Footer from "../components/footer";
 import {
+	mailingListSignupUrl,
 	paymentConfirmationFormUrl,
 	sammyAppSignupUrl,
 	semesterDuesAmount,
@@ -155,6 +156,15 @@ export default function JoinUsPage() {
 									<span>
 										Join the{" "}
 										<a
+											href={mailingListSignupUrl}
+											target="_blank"
+											rel="noopener noreferrer"
+											className={linkClass}
+										>
+											Mailing List
+										</a>
+										,{" "}
+										<a
 											href={discordUrl}
 											target="_blank"
 											rel="noopener noreferrer"
@@ -162,7 +172,7 @@ export default function JoinUsPage() {
 										>
 											Discord
 										</a>{" "}
-										and verify to get access to all channels, and follow the{" "}
+										(verify in chat to get access to all channels), or follow the{" "}
 										<a
 											href={instagramUrl}
 											target="_blank"
@@ -170,9 +180,9 @@ export default function JoinUsPage() {
 											className={linkClass}
 										>
 											Instagram
-										</a>{" "}
-										if you haven&apos;t already. Announcements for meetings
-										will be posted on both.
+										</a>
+										. Announcements for meetings will be shared through these
+										channels.
 									</span>
 								</li>
 								<li className="flex gap-4">
