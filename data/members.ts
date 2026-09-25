@@ -105,6 +105,12 @@ export const membersBySemester: Record<string, Member[]> = {
       img: "/members/2026 Fall/eugenelytnev.webp",
       linkedin: "https://www.linkedin.com/in/eugl/",
     },
+    {
+      name: "Kobe Ramirez",
+      role: "Member",
+      img: "/members/2026 Fall/koberamirez.jpeg",
+      linkedin: "https://www.linkedin.com/in/kobe-ramirez-357489361/",
+    },
   ],
 
   // ── 2026 SPRING ───────────────────────────────────────────
