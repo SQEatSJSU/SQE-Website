@@ -34,10 +34,10 @@ export const membersBySemester: Record<string, Member[]> = {
       msqt: true,
     },
     {
-      name: "Chetan Malik",
+      name: "Daman Singh",
       role: "Vice President",
-      img: "/members/2026 Fall/chetan.jpeg",
-      linkedin: "https://www.linkedin.com/in/chetan-malik-6a639b30/",
+      img: "/members/2026 Fall/daman.jpg",
+      linkedin: "https://www.linkedin.com/in/daman-singh-63414728a/",
       msqt: true,
     },
     {
@@ -48,15 +48,8 @@ export const membersBySemester: Record<string, Member[]> = {
       msqt: true,
     },
     {
-      name: "Daman Singh",
-      role: "Secretary",
-      img: "/members/2026 Fall/daman.jpg",
-      linkedin: "https://www.linkedin.com/in/daman-singh-63414728a/",
-      msqt: true,
-    },
-    {
       name: "Abhishek Roy",
-      role: "Project Manager",
+      role: "Hackathon Lead",
       img: "/members/2026 Spring/abhishekroy.JPG",
       linkedin: "https://www.linkedin.com/in/abhishek-roy737/",
     },
@@ -67,6 +60,67 @@ export const membersBySemester: Record<string, Member[]> = {
       linkedin: "https://www.linkedin.com/in/mark-sotnikov-a00152331/",
     },
     {
+      name: "Gabriel Gaeta",
+      role: "Hardware Lead",
+      img: "/members/2026 Spring/gabrielgaeta.JPG",
+      linkedin: "https://www.linkedin.com/in/gabriel-gaeta/",
+    },
+    {
+      name: "Chelsie Hadley",
+      role: "Quantum Education Lead",
+      img: "/members/2026 Fall/chelsie.png",
+      linkedin: "https://www.linkedin.com/in/chelsie-hadley/",
+    },
+    {
+      name: "Chetan Malik",
+      role: "Member",
+      img: "/members/2026 Fall/chetan.jpeg",
+      linkedin: "https://www.linkedin.com/in/chetan-malik-6a639b30/",
+      msqt: true,
+    },
+    {
+      name: "Kobe Ramirez",
+      role: "Member",
+      img: "/members/2026 Fall/koberamirez.jpeg",
+      linkedin: "https://www.linkedin.com/in/kobe-ramirez-357489361/",
+    },
+    {
+      name: "Eric Freda",
+      role: "Member",
+      img: "/members/2026 Fall/ericfreda.png",
+      linkedin: "https://www.linkedin.com/in/eric-freda-a4a81a219/",
+    },
+    {
+      name: "Sandra Olivarez",
+      role: "Member",
+      img: "/members/2026 Fall/sandy.png",
+      linkedin: "https://www.linkedin.com/in/sandra-olivarez/",
+    },
+    {
+      name: "Noah Arias",
+      role: "Member",
+      img: "/members/2026 Fall/noaharias.webp",
+      linkedin: "https://www.linkedin.com/in/noah-arias-9aa7b61a3/",
+    },
+    {
+      name: "Devom Brahmbhatt",
+      role: "Member",
+      img: "/members/2026 Fall/devom.png",
+      linkedin: "https://www.linkedin.com/in/devomb/",
+    },
+    {
+      name: "Taissia Bazhenova",
+      role: "Member",
+      img: "/members/2026 Fall/taissiabazhenova.png",
+      linkedin: "https://www.linkedin.com/in/taissia-bazhenova-6b6639268/",
+    },
+    {
+      name: "Eugene Lytnev",
+      role: "Member",
+      img: "/members/2026 Fall/eugenelytnev.webp",
+      linkedin: "https://www.linkedin.com/in/eugl/",
+    },
+    {
       name: "Stephen Reagin",
       role: "Member",
       img: "/members/2026 Spring/stephenreagin.JPG",
@@ -74,10 +128,10 @@ export const membersBySemester: Record<string, Member[]> = {
       msqt: true,
     },
     {
-      name: "Gabriel Gaeta",
+      name: "Ray Ma",
       role: "Member",
-      img: "/members/2026 Spring/gabrielgaeta.JPG",
-      linkedin: "https://www.linkedin.com/in/gabriel-gaeta/",
+      img: "/members/2026 Fall/rayma.png",
+      linkedin: "",
     },
     {
       name: "Vincent Le",
@@ -92,24 +146,6 @@ export const membersBySemester: Record<string, Member[]> = {
       img: "/members/2026 Spring/mikechin.JPG",
       linkedin: "",
       msqt: true,
-    },
-    {
-      name: "Noah Arias",
-      role: "Member",
-      img: "/members/2026 Fall/noaharias.webp",
-      linkedin: "https://www.linkedin.com/in/noah-arias-9aa7b61a3/",
-    },
-    {
-      name: "Eugene Lytnev",
-      role: "Member",
-      img: "/members/2026 Fall/eugenelytnev.webp",
-      linkedin: "https://www.linkedin.com/in/eugl/",
-    },
-    {
-      name: "Kobe Ramirez",
-      role: "Member",
-      img: "/members/2026 Fall/koberamirez.jpeg",
-      linkedin: "https://www.linkedin.com/in/kobe-ramirez-357489361/",
     },
   ],
 
@@ -324,6 +360,22 @@ export const membersBySemester: Record<string, Member[]> = {
       role: "Member",
       img: "/members/2025 Fall/kaveesh.jpeg",
       linkedin: "https://www.linkedin.com/in/kaveesh-passari-393556200/",
+    },
+  ],
+
+  // ── FOUNDERS ──────────────────────────────────────────────
+  Founders: [
+    {
+      name: "Samuel Petruescu",
+      role: "Founder",
+      img: "/members/Founders/sam.webp",
+      linkedin: "https://www.linkedin.com/in/samuel-petruescu/",
+    },
+    {
+      name: "James Saslow",
+      role: "Founder",
+      img: "/members/Founders/james.webp",
+      linkedin: "https://www.linkedin.com/in/james-saslow-147138161/",
     },
   ],
 };

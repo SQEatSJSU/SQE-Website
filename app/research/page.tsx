@@ -10,11 +10,18 @@ import Footer from "../components/footer";
 
 const projects = [
   {
-    id: "quantum-cryptography-kit",
-    track: "ALL levels",
-    title: "Hardware",
+    id: "beginner-hardware",
+    track: "Beginner",
+    title: "Beginner Hardware",
     summary:
       "A hands-on optical setup for BB84 quantum key distribution, showing how polarization encodes information and how eavesdropping is detected.",
+  },
+  {
+    id: "advanced-hardware",
+    track: "Advanced",
+    title: "Advanced Hardware",
+    summary:
+      "The Thorlabs Quantum Educational Optics Kit, currently set up for the single-photon experiment.",
   },
   {
     id: "beginner-software",
@@ -50,7 +57,7 @@ export default function ResearchPage() {
 
           {/* Project overview — visible as soon as the page opens */}
           <motion.div
-            className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3"
+            className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.25, duration: 0.8, ease: "easeOut" }}
@@ -79,7 +86,7 @@ export default function ResearchPage() {
           </motion.div>
 
           <motion.section
-            id="quantum-cryptography-kit"
+            id="beginner-hardware"
             className="scroll-mt-24 mt-16 bg-zinc-800 rounded-lg p-8 sm:p-12 border border-zinc-700"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -87,10 +94,10 @@ export default function ResearchPage() {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">
-              ALL levels
+              Beginner
             </span>
             <h2 className="mt-3 text-2xl font-semibold text-white mb-4">
-              Hardware
+              Beginner Hardware
             </h2>
             <p className="text-zinc-400 text-base sm:text-lg mb-8">
               This project explores a hands-on way to understand BB84 quantum key
@@ -131,6 +138,44 @@ export default function ResearchPage() {
                   Experimental setup used to model sender, receiver, and eavesdropper interactions.
                 </p>
               </div>
+            </div>
+          </motion.section>
+
+          <motion.section
+            id="advanced-hardware"
+            className="scroll-mt-24 mt-8 bg-zinc-800 rounded-lg p-8 sm:p-12 border border-zinc-700"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">
+              Advanced
+            </span>
+            <h2 className="mt-3 text-2xl font-semibold text-white mb-4">
+              Advanced Hardware
+            </h2>
+            <p className="text-zinc-400 text-base sm:text-lg mb-8">
+              The advanced hardware group is working with the Thorlabs Quantum
+              Educational Optics Kit. The current experiment is the single-photon
+              experiment, using the kit&apos;s optics and detectors to study how
+              individual photons are prepared, sent through the setup, and
+              counted.
+            </p>
+
+            <div className="rounded-lg border border-zinc-700 bg-zinc-900/50 p-4">
+              <div className="relative overflow-hidden rounded-md border border-zinc-700">
+                <Image
+                  src="/community/2026-2027-cycle/hardwaregroup.png"
+                  alt="SQE members with the Thorlabs optics setup for the single-photon experiment"
+                  width={1600}
+                  height={1066}
+                  className="h-auto w-full object-cover"
+                />
+              </div>
+              <p className="mt-3 text-sm text-zinc-400">
+                The advanced hardware group with the Thorlabs Quantum Educational Optics Kit.
+              </p>
             </div>
           </motion.section>
 

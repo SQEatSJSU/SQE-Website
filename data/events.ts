@@ -104,6 +104,38 @@ export const eventsByCycle: Record<string, Event[]> = {
   // ── 2026-2027 CYCLE ── most recent at top ──────────────────
   "2026-2027": [
     {
+      id: 7,
+      image: "/community/2026-2027-cycle/halloween.png",
+      title: "Happy Halloween from SQE",
+      speaker: "Taissia Bazhenova",
+      date: "October 31, 2026",
+      description: "Happy Halloween from SQE.",
+    },
+    {
+      id: 6,
+      image: "/community/2026-2027-cycle/fourthmeeting.png",
+      title: "Quantum Technologies Overview",
+      speaker: "SQE",
+      date: "October 21, 2026",
+      description: "A broad overview of quantum technologies for new members, covering concepts and research in quantum sensing, quantum communication, quantum computing, and quantum materials.",
+    },
+    {
+      id: 5,
+      image: "/community/2026-2027-cycle/thirdmeeting.png",
+      title: "Quantum Gates Workshop",
+      speaker: "SQE",
+      date: "October 14, 2026",
+      description: "A hands-on beginner workshop on quantum computing, focused on quantum gates. Members used Qiskit through IBM Composer to build quantum gates.",
+    },
+    {
+      id: 4,
+      image: "/community/2026-2027-cycle/ionq.png",
+      title: "IonQ Guest Visit",
+      speaker: "Walker Steere, IonQ",
+      date: "October 7, 2026",
+      description: "Walker Steere visited SQE. With seven years at IonQ, he has worked across ion-trap device design, fabrication, packaging, and validation, helping turn trapped-ion physics into manufacturable quantum hardware.",
+    },
+    {
       id: 3,
       image: "/community/2026-2027-cycle/mckinney.webp",
       title: "SQE Special Guest Meeting",
