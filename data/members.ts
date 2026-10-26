@@ -121,17 +121,17 @@ export const membersBySemester: Record<string, Member[]> = {
       linkedin: "https://www.linkedin.com/in/eugl/",
     },
     {
+      name: "Ray Ma",
+      role: "Member",
+      img: "/members/2026 Fall/rayma.png",
+      linkedin: "https://www.linkedin.com/in/aizero/",
+    },
+    {
       name: "Stephen Reagin",
       role: "Member",
       img: "/members/2026 Spring/stephenreagin.JPG",
       linkedin: "https://www.linkedin.com/in/stephen-reagin-764007126/",
       msqt: true,
-    },
-    {
-      name: "Ray Ma",
-      role: "Member",
-      img: "/members/2026 Fall/rayma.png",
-      linkedin: "",
     },
     {
       name: "Vincent Le",
